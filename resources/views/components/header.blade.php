@@ -20,7 +20,7 @@
                 <h2 class="nav__h2 hidden">Navigation principale</h2>
                 <ul>
                     <li>
-                        <a href="{{ url('/index') }}">Accueil</a>
+                        <a href="{{ url('/') }}">Accueil</a>
                     </li>
                     <li>
                         <a href="{{ url('/about') }}">À propos</a>
