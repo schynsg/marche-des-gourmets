@@ -1684,3 +1684,32 @@ div.choices {
   color: #335C67;
 }
 
+.flex {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.flex .hidden {
+  height: 0;
+  width: 0;
+}
+
+.flex a.border {
+  background-color: transparent;
+  color: #05000C;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  width: auto;
+  font-size: 1.1363em;
+}
+
+.flex span {
+  color: white;
+}
+
+.infos__content div p {
+  line-height: 2;
+}
+

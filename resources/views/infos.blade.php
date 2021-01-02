@@ -20,25 +20,17 @@
         </div>
         <div class="intro__background"></div>
     </div>
+    @if(count($infos))
     <div class="infos__content">
+        @foreach($infos as $info)
         <div>
-            <h3>Où ?</h3>
-            <p>Chateau du Val Saint Lambert</p>
-            <p>Esplanade du Val,</p>
-            <p>4100 Seraing</p>
+            <h3>{{$info->title}}</h3>
+            <p>{!!nl2br($info->content)!!}</p>
         </div>
-        <div>
-            <h3>Quand ?</h3>
-            <p>Le samedi 27 mars 2021 de 11h00 à 20h00</p>
-            <p>Le dimanche 28 mars 2020 de 10h00 à 19h00</p>
-        </div>
-        <div>
-            <h3>Prix</h3>
-            <p>Entrée : 6,00€</p>
-            <p>Entrée gratuite pour les moins de 16 ans</p>
-        </div>
+        @endforeach
         <a href="{{ url('/ticketing') }}">Acheter des billets</a>
     </div>
+    @endif
 </main>
 @include('components.footer')
 </body>

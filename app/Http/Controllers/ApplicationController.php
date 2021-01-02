@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\info;
+use App\Models\application;
 use Illuminate\Http\Request;
 
-class InfoController extends Controller
+class ApplicationController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,9 +14,7 @@ class InfoController extends Controller
      */
     public function index()
     {
-        $infos = info::all();
-
-        return view('infos', compact('infos'));
+        //
     }
 
     /**
@@ -26,7 +24,7 @@ class InfoController extends Controller
      */
     public function create()
     {
-        //
+        return view('newExhibitor');
     }
 
     /**
@@ -43,10 +41,10 @@ class InfoController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\info  $info
+     * @param  \App\Models\application  $application
      * @return \Illuminate\Http\Response
      */
-    public function show(info $info)
+    public function show(application $application)
     {
         //
     }
@@ -54,10 +52,10 @@ class InfoController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\info  $info
+     * @param  \App\Models\application  $application
      * @return \Illuminate\Http\Response
      */
-    public function edit(info $info)
+    public function edit(application $application)
     {
         //
     }
@@ -66,10 +64,10 @@ class InfoController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\info  $info
+     * @param  \App\Models\application  $application
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, info $info)
+    public function update(Request $request, application $application)
     {
         //
     }
@@ -77,10 +75,10 @@ class InfoController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\info  $info
+     * @param  \App\Models\application  $application
      * @return \Illuminate\Http\Response
      */
-    public function destroy(info $info)
+    public function destroy(application $application)
     {
         //
     }

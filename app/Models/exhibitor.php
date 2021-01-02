@@ -8,4 +8,16 @@ use Illuminate\Database\Eloquent\Model;
 class exhibitor extends Model
 {
     use HasFactory;
+
+    protected $fillable = [
+        'name',
+        'phone',
+        'website',
+        'address',
+        'postal_code',
+        'city',
+        'country',
+        'description',
+        'is_bio'
+    ];
 }

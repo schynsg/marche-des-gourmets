@@ -43,7 +43,7 @@ Route::get('/new-exhibitor', function () {
     return view('newExhibitor');
 });
 */
-Route::get('/new-exhibitor', [\App\Http\Controllers\ExhibitorController::class, 'create']);
+Route::get('/new-exhibitor', [\App\Http\Controllers\ApplicationController::class, 'create']);
 
 
 /*

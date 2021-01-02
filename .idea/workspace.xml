@@ -2,9 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3bf8d15f-c1bf-410f-a1c6-d01ccec63d63" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ExhibitorController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ExhibitorController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/InfoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/InfoController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/exhibitor.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/exhibitor.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/info.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/info.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_01_02_131025_create_exhibitors_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_01_02_131025_create_exhibitors_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_01_02_133632_create_infos_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_01_02_133632_create_infos_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/ExhibitorSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/ExhibitorSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/InfoSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/InfoSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/en/pagination.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/pagination.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/exhibitors.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/exhibitors.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/infos.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/infos.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -176,7 +188,7 @@
       <workItem from="1607866296798" duration="44689000" />
       <workItem from="1609189766216" duration="31422000" />
       <workItem from="1609331012633" duration="13018000" />
-      <workItem from="1609587937116" duration="7545000" />
+      <workItem from="1609587937116" duration="22834000" />
     </task>
     <servers />
   </component>
@@ -184,6 +196,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="203" y="278" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1609624664758">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="203" y="278" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1609624664758" />
     <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1607867179615">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

@@ -14,7 +14,9 @@ class ExhibitorController extends Controller
      */
     public function index()
     {
-        return view('exhibitors');
+        $exhibitors = exhibitor::paginate(10);
+
+        return view('exhibitors', compact('exhibitors'));
     }
 
     /**
@@ -24,7 +26,7 @@ class ExhibitorController extends Controller
      */
     public function create()
     {
-        return view('newExhibitor');
+        //
     }
 
     /**

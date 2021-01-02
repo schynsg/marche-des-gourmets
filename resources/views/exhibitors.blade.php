@@ -29,6 +29,7 @@
     </div>
     <div class="exhib__content">
         <h2>Liste de nos exposants</h2>
+        @if(count($exhibitors))
         <div class="exhibitors">
             <div class="exhib__forms">
                 <form action="#" class="exhib__search-form">
@@ -52,67 +53,23 @@
                 </form>
             </div>
             <ul class="exhib__list">
+                @foreach($exhibitors as $exhibitor)
                 <li class="exhibitor">
                     <div class="exhibitor__infos">
-                        <h3>Ferme D'artagnan</h3>
-                        <p class="exhibitor__address">Rue de Tongres 77, 4684 Haccourt (BE)</p>
-                        <p class="exhibitors__products">Foie gras, magrets, filets, rillettes, cuisses confites de canard et dérivés</p>
+                        <h3 @if($exhibitor->is_bio)class="bio"@endif>{{$exhibitor->name}}</h3>
+                        <p class="exhibitor__address">{{$exhibitor->address}}, {{$exhibitor->postal_code}} {{$exhibitor->city}} ({{$exhibitor->country}})</p>
+                        <p class="exhibitors__products">{{$exhibitor->description}}</p>
                     </div>
-                    <a href="https://www.lafermedartagnan.be/" title="Vers le site de l'exposant">Visiter le site web</a>
+                    @if($exhibitor->website !== "")<a href="{{$exhibitor->website}}" title="Vers le site de l'exposant">Visiter le site web</a>@endif
                 </li>
-                <li class="exhibitor">
-                    <div class="exhibitor__infos">
-                        <h3 class="bio">Daphne Olive Oil</h3>
-                        <p class="exhibitor__address">Avenue Félix Deblon 151, 4910 Theux (BE)</p>
-                        <p class="exhibitors__products">Huile d'olives grecque (région de Kalamata)</p>
-                    </div>
-                    <a href="https://daphneoil.bio/fr/" title="Vers le site de l'exposant">Visiter le site web</a>
-                </li>
-                <li class="exhibitor">
-                    <div class="exhibitor__infos">
-                        <h3>Sweet Cuberdons - Bonbons à l'ancienne</h3>
-                        <p class="exhibitor__address">Rue des Téris 56, 4100 Seraing (BE)</p>
-                        <p class="exhibitors__products">Cuberdons artisanaux</p>
-                    </div>
-                    <a href="https://cuberdons.eu/" title="Vers le site de l'exposant">Visiter le site web</a>
-                </li>
-                <li class="exhibitor">
-                    <div class="exhibitor__infos">
-                        <h3 class="bio">La Boutique du Champignon</h3>
-                        <p class="exhibitor__address">2b Rempart Nord, 68420 EGUISHEIM (FR)</p>
-                        <p class="exhibitors__products">Produits gastronomiques autour de la thématique du champignon</p>
-                    </div>
-                    <a href="https://www.laboutiqueduchampignon.com/fr/" title="Vers le site de l'exposant">Visiter le site web</a>
-                </li>
-                <li class="exhibitor">
-                    <div class="exhibitor__infos">
-                        <h3 class="bio">La Boutique du Champignon</h3>
-                        <p class="exhibitor__address">2b Rempart Nord, 68420 EGUISHEIM (FR)</p>
-                        <p class="exhibitors__products">Produits gastronomiques autour de la thématique du champignon</p>
-                    </div>
-                    <a href="https://www.laboutiqueduchampignon.com/fr/" title="Vers le site de l'exposant">Visiter le site web</a>
-                </li>
-                <li class="exhibitor">
-                    <div class="exhibitor__infos">
-                        <h3>Sweet Cuberdons - Bonbons à l'ancienne</h3>
-                        <p class="exhibitor__address">Rue des Téris 56, 4100 Seraing (BE)</p>
-                        <p class="exhibitors__products">Cuberdons artisanaux</p>
-                    </div>
-                    <a href="https://cuberdons.eu/" title="Vers le site de l'exposant">Visiter le site web</a>
-                </li>
+                @endforeach
             </ul>
-            <div class="exhib__page-change">
-                <a href="#">
-                    <svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.5 21" height="24" width="22"><defs><style>.cls-11{fill:#05000c;}</style></defs><path id="Icon_material-play-arrow" data-name="Icon material-play-arrow" class="cls-11" d="M3.44,11.37l16.5,10.51V.88Z" transform="translate(-3.44 -0.88)"/></svg>
-                    Précédant
-                </a>
-                <a href="#">
-                    Suivant
-                    <svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.5 21" height="24" width="22"><defs><style>.cls-11{fill:#05000c;}</style></defs><path id="Icon_material-play-arrow" data-name="Icon material-play-arrow" class="cls-11" d="M3.44.88v21l16.5-10.5Z" transform="translate(-3.44 -0.88)"/></svg>
-                </a>
-            </div>
+            {{$exhibitors->links()}}
             <a href="{{ url('/new-exhibitor') }}" class="exhib__new-link">Devenir exposant</a>
         </div>
+        @else
+        <p>Malheureusement, nous n'avons pas encore d'exposant à vous montrer pour l'instant.</p>
+        @endif
     </div>
 </main>
 @include('components.footer')
