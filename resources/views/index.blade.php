@@ -15,8 +15,8 @@
             <div>
                 <div class="intro__text">
                     <div class="intro__title">
-                        <h2>20<sup>e</sup> Marché des Gourmets</h2>
-                        <p>27 & 28 mars 2021</p>
+                        <h2>{{$texts->where('title', '=', 'Edition number')->first()->content}}<sup>e</sup> Marché des Gourmets</h2>
+                        <p>{{$texts->where('title', '=', 'Date')->first()->content}}</p>
                     </div>
                     <div class="intro__content">
                         <p>Organisé par le Rotary Club de Flémalle</p>
@@ -35,14 +35,10 @@
             <h2>Bienvenue sur le site du Marché des Gourmets</h2>
             <div class="welcome__text">
                 <div>
-                    <p>Vous y trouverez toutes les informations concernant cet événement annuel se tenant dans le merveilleux cadre du <b>Val Saint Lambert (BE)</b>.</p>
-                    <p> Marché des Gourmets est une organisation du <b>Rotary club de Flémalle</b> en partenariat avec le <b>Collège Provincial de Liège</b>.</p>
+                    <p>{!!nl2br($texts->where('title', '=', 'Index welcome first part')->first()->content)!!}</p>
                 </div>
                 <div>
-                    <p>Il est placé sous le patronage de : </p>
-                    <p><b>Mme Isabelle SIMONIS</b>, Ministre de la Fédération Wallonie-Bruxelles</p>
-                    <p><b>M. Paul-Emile MOTTARD</b>, Député provincial-Président et les membres du Collège provincial de Liège</p>
-                    <p><b>M. Jean-Michel JAVAUX</b>, Bourgmestre d'Amay</p>
+                    <p>{!!nl2br($texts->where('title', '=', 'Index welcome second part')->first()->content)!!}</p>
                 </div>
             </div>
             <a href="{{ url('/about') }}">Découvrir le marché</a>

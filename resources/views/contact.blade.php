@@ -23,9 +23,7 @@
     <div class="contact__content">
         <div>
             <h3>Marché des Gourmets</h3>
-            <p>Philippe Vanstalle</p>
-            <p>Quai de Rome, 10/23</p>
-            <p>4000 Liège</p>
+            <p>{!!nl2br($texts->where('title', '=', 'Contact informations')->first()->content)!!}</p>
         </div>
         <div>
             <h3>Formulaire de contact</h3>

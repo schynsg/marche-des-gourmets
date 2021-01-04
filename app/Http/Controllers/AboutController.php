@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\extra;
+use App\Models\text;
 use Illuminate\Http\Request;
 
 class AboutController extends Controller
@@ -9,6 +11,10 @@ class AboutController extends Controller
 
     public function index()
     {
-        return view('about');
+
+        $texts = text::all();
+        $extras = extra::all();
+
+        return view('about', compact('texts', 'extras'));
     }
 }

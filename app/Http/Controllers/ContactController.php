@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\text;
 use Illuminate\Http\Request;
 
 class ContactController extends Controller
@@ -9,6 +10,8 @@ class ContactController extends Controller
 
     public function index()
     {
-        return view('contact');
+        $texts = text::all();
+
+        return view('contact', compact('texts'));
     }
 }
