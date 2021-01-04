@@ -10,6 +10,7 @@ class extra extends Model
     use HasFactory;
 
     protected $fillable = [
+        'title',
         'content',
         'svg',
     ];

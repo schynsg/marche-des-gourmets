@@ -15,6 +15,7 @@ class CreateExtrasTable extends Migration
     {
         Schema::create('extras', function (Blueprint $table) {
             $table->id();
+            $table->string('title');
             $table->text('content');
             $table->longText('svg');
             $table->timestamps();
