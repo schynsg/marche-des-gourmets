@@ -3,10 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="3bf8d15f-c1bf-410f-a1c6-d01ccec63d63" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/extra.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/extra.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_01_03_200301_create_extras_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_01_03_200301_create_extras_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/ExtraSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/ExtraSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ExhibitorController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ExhibitorController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PartnersController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/partners.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/PartnersFactory.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_01_03_150434_create_partners_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/PartnersSeeder.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/exhibitors.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/exhibitors.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -194,7 +198,9 @@
       <workItem from="1609331012633" duration="13018000" />
       <workItem from="1609587937116" duration="24886000" />
       <workItem from="1609684337494" duration="2411000" />
-      <workItem from="1609702491217" duration="23769000" />
+      <workItem from="1609702491217" duration="24056000" />
+      <workItem from="1609928907331" duration="682000" />
+      <workItem from="1609937610738" duration="3196000" />
     </task>
     <servers />
   </component>
@@ -202,10 +208,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="203" y="278" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1609772532570">
+    <state x="203" y="278" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1609938015288">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="203" y="278" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1609772532570" />
+    <state x="203" y="278" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1609938015288" />
     <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1607867179615">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

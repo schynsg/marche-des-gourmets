@@ -39,18 +39,17 @@
                         --><input type="submit" value="rechercher" style=" background-image: url('{{asset('img/search.svg')}}');">
                     </div>
                 </form>
+                @if(count($filters))
                 <form action="#" class="exhib__filter-form">
                     <label for="filter">Type de produits</label>
                     <select name="filter" id="filter">
                         <option value="all">Tout</option>
-                        <option value="alcohol">Vins, Gins, Rhums,...</option>
-                        <option value="cheese">Fromages</option>
-                        <option value="meat">Charcuterie, salaisons,...</option>
-                        <option value="grocery">Épicerie</option>
-                        <option value="dessert">Pâtisserie, desserts,...</option>
-                        <option value="other">Autres</option>
+                        @foreach($filters as $filter)
+                            <option value="{{$filter->value}}">{{$filter->text}}</option>
+                        @endforeach
                     </select>
                 </form>
+                @endif
             </div>
             <ul class="exhib__list">
                 @foreach($exhibitors as $exhibitor)

@@ -2,17 +2,17 @@
 
 namespace Database\Factories;
 
-use App\Models\partners;
+use App\Models\filter;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
-class PartnersFactory extends Factory
+class FilterFactory extends Factory
 {
     /**
      * The name of the factory's corresponding model.
      *
      * @var string
      */
-    protected $model = partners::class;
+    protected $model = filter::class;
 
     /**
      * Define the model's default state.

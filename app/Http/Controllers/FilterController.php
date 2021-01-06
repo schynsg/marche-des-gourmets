@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\partners;
+use App\Models\filter;
 use Illuminate\Http\Request;
 
-class PartnersController extends Controller
+class FilterController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -41,10 +41,10 @@ class PartnersController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\partners  $partners
+     * @param  \App\Models\filter  $filter
      * @return \Illuminate\Http\Response
      */
-    public function show(partners $partners)
+    public function show(filter $filter)
     {
         //
     }
@@ -52,10 +52,10 @@ class PartnersController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\partners  $partners
+     * @param  \App\Models\filter  $filter
      * @return \Illuminate\Http\Response
      */
-    public function edit(partners $partners)
+    public function edit(filter $filter)
     {
         //
     }
@@ -64,10 +64,10 @@ class PartnersController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\partners  $partners
+     * @param  \App\Models\filter  $filter
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, partners $partners)
+    public function update(Request $request, filter $filter)
     {
         //
     }
@@ -75,10 +75,10 @@ class PartnersController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\partners  $partners
+     * @param  \App\Models\filter  $filter
      * @return \Illuminate\Http\Response
      */
-    public function destroy(partners $partners)
+    public function destroy(filter $filter)
     {
         //
     }

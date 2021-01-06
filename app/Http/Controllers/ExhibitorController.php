@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\exhibitor;
+use App\Models\filter;
 use App\Models\text;
 use Illuminate\Http\Request;
 
@@ -17,8 +18,9 @@ class ExhibitorController extends Controller
     {
         $exhibitors = exhibitor::paginate(10);
         $texts = text::all();
+        $filters = filter::all();
 
-        return view('exhibitors', compact('exhibitors', 'texts'));
+        return view('exhibitors', compact('exhibitors', 'texts', 'filters'));
     }
 
     /**

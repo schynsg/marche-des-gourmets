@@ -19,6 +19,7 @@ class DatabaseSeeder extends Seeder
             InfoSeeder::class,
             textSeeder::class,
             ExtraSeeder::class,
+            FilterSeeder::class,
         ]);
     }
 }
