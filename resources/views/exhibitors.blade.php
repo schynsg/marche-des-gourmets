@@ -60,6 +60,7 @@
                         <p class="exhibitors__products">{{$exhibitor->description}}</p>
                     </div>
                     @if($exhibitor->website !== "")<a href="{{$exhibitor->website}}" title="Vers le site de l'exposant">Visiter le site web</a>@endif
+                    @foreach($exhibitor->filters as $filter){{$filter->value}}@endforeach
                 </li>
                 @endforeach
             </ul>

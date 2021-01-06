@@ -20,6 +20,7 @@ class DatabaseSeeder extends Seeder
             textSeeder::class,
             ExtraSeeder::class,
             FilterSeeder::class,
+            ExhibitorFilterSeeder::class,
         ]);
     }
 }

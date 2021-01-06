@@ -20,4 +20,8 @@ class exhibitor extends Model
         'description',
         'is_bio'
     ];
+
+    public function filters() {
+        return $this->belongsToMany(filter::class);
+    }
 }
