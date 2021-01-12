@@ -13,12 +13,14 @@ class Exhib extends Component
     use WithPagination;
 
     public $searchTerm;
+    public $searchFilter = 'all';
 
     public function render()
     {
         $texts = text::all();
         $filters = filter::all();
-        $exhibitors = exhibitor::query()->where('name','LIKE', '%'. $this->searchTerm . '%')->paginate(2);
+        $exhibitors = exhibitor::query()->where('name','LIKE', '%'. $this->searchTerm . '%')->orWhere('city','LIKE', '%'. $this->searchTerm . '%')->orWhere('description','LIKE', '%'. $this->searchTerm . '%')->paginate(2);
         return view('livewire.exhib', ['exhibitors' => $exhibitors], compact('texts','filters'));
     }
 }
+
