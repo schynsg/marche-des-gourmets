@@ -35,7 +35,7 @@ Route::get('/exhibitors', function () {
     return view('exhibitors');
 });
 */
-Route::get('/exhibitors', [\App\Http\Controllers\ExhibitorController::class, 'index']);
+Route::get('/exhibitors', [\App\Http\Livewire\Exhibitors::class, 'render']);
 
 
 /*
@@ -74,4 +74,7 @@ Route::get('/ticketing', function () {
 });
 */
 Route::get('/ticketing', [\App\Http\Controllers\TicketController::class, 'index']);
+
+
+Route::post('/newApplication', [\App\Http\Controllers\ApplicationController::class, 'store']);
 

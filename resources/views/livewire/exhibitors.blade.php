@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Nos exposants - Marché des Gourmets</title>
     @livewireStyles
-    <link href="{{asset('css/app.css?v=').time()}}" rel="stylesheet">
+    <link href="{{asset('css/app.css?v=')}}" rel="stylesheet">
 </head>
 <body>
 @include('components.header')

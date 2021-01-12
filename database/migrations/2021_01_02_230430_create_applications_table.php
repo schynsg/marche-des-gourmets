@@ -15,6 +15,15 @@ class CreateApplicationsTable extends Migration
     {
         Schema::create('applications', function (Blueprint $table) {
             $table->id();
+            $table->string('name')->unique();
+            $table->string('phone');
+            $table->string('website');
+            $table->string('address');
+            $table->mediumInteger('postal_code');
+            $table->string('city');
+            $table->string('country');
+            $table->mediumText('description');
+            $table->boolean('is_bio');
             $table->timestamps();
         });
     }

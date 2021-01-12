@@ -38,7 +38,8 @@ class ApplicationController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        return view('application');
+
     }
 
     /**

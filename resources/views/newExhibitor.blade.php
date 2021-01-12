@@ -29,7 +29,8 @@
     </div>
     <div class="new-exhib__content">
         <h2>Formulaire d'inscription</h2>
-        <form action="#" class="new-exhib__form">
+        <form action="/newApplication" method="post" class="new-exhib__form">
+            {{csrf_field()}}
             <div>
                 <label for="name">Nom de la société</label>
                 <input type="text" id="name" name="name" placeholder="Nom de la société">
