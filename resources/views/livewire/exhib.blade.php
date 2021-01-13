@@ -1,28 +1,27 @@
 <div class="exhib__content">
     <h2>Liste de nos exposants</h2>
-        <div class="exhibitors">
-            <div class="exhib__forms">
-                <div class="exhib__search-form">
-                    <label for="search">Rechercher un exposant</label>
-                    <div>
-                        <input type="text" name="search" id="search" placeholder="Rechercher"  wire:model="searchTerm"><!--
+    <div class="exhibitors">
+        <div class="exhib__forms">
+            <div class="exhib__search-form">
+                <label for="search">Rechercher un exposant</label>
+                <div>
+                    <input type="text" name="search" id="search" placeholder="Rechercher"  wire:model="searchTerm"><!--
                         --><div class="search__icon" style=" background-image: url('{{asset('img/search-icon.svg')}}');"></div>
-                    </div>
                 </div>
-                @if(count($filters))
-                    <form action="#" class="exhib__filter-form">
-                        <label for="filter">Type de produits</label>
-                        <select name="filter" id="filter" wire:model="searchFilter">
-                            <option value="all">Tout</option>
-                            @foreach($filters as $filter)
-                                <option value="{{$filter->value}}">{{$filter->text}}</option>
-                            @endforeach
-                        </select>
-                    </form>
-                @endif
             </div>
-            {{$searchFilter}}
-    @if(count($exhibitors))
+            @if(count($filters))
+                <form action="#" class="exhib__filter-form">
+                    <label for="filter">Type de produits</label>
+                    <select name="filter" id="filter" wire:model="searchFilter">
+                        <option value="all">Tout</option>
+                        @foreach($filters as $filter)
+                            <option value="{{$filter->value}}">{{$filter->text}}</option>
+                        @endforeach
+                    </select>
+                </form>
+            @endif
+        </div>
+        @if(count($exhibitors))
             <ul class="exhib__list">
                 @foreach($exhibitors as $exhibitor)
                     <li class="exhibitor">
@@ -35,11 +34,11 @@
                     </li>
                 @endforeach
             </ul>
-            {{$exhibitors->links()}}
+            {{$exhibitorsAll->links()}}
             <a href="{{ url('/new-exhibitor') }}" class="exhib__new-link">Devenir exposant</a>
-        </div>
-    @elseif($searchTerm != '')
-        <p>Désolé, nous n'avons trouvé aucun exposant correspondant à votre recherche '{{$searchTerm}}'</p>
+    </div>
+    @elseif($searchTerm != '' || $searchFilter != 'all')
+        <p>Désolé, nous n'avons trouvé aucun exposant correspondant à vos critères</p>
     @else
         <p>Malheureusement, nous n'avons pas encore d'exposant à vous montrer pour l'instant.</p>
     @endif

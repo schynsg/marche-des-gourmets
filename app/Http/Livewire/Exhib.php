@@ -19,8 +19,22 @@ class Exhib extends Component
     {
         $texts = text::all();
         $filters = filter::all();
-        $exhibitors = exhibitor::query()->where('name','LIKE', '%'. $this->searchTerm . '%')->orWhere('city','LIKE', '%'. $this->searchTerm . '%')->orWhere('description','LIKE', '%'. $this->searchTerm . '%')->paginate(2);
-        return view('livewire.exhib', ['exhibitors' => $exhibitors], compact('texts','filters'));
+        $exhibitorsAll = exhibitor::query()->where('name','LIKE', '%'. $this->searchTerm . '%')->orWhere('city','LIKE', '%'. $this->searchTerm . '%')->orWhere('description','LIKE', '%'. $this->searchTerm . '%')->paginate(2);
+        $exhibitorsFiltered = [];
+
+        for ($i = 0; $i < count($exhibitorsAll->items()); $i++) {
+            if ($this->searchFilter === 'all'){
+                array_push($exhibitorsFiltered, $exhibitorsAll->items()[$i]);
+            } else{
+                for ($j = 0; $j < (count($exhibitorsAll->items()[$i]->filters)); $j++){
+                    if ($exhibitorsAll->items()[$i]->filters[$j]->value === $this->searchFilter){
+                        array_push($exhibitorsFiltered, $exhibitorsAll->items()[$i]);
+                    }
+                }
+            }
+        }
+
+        return view('livewire.exhib', ['exhibitors' => $exhibitorsFiltered], compact('texts','filters', 'exhibitorsAll'));
     }
 }
 
