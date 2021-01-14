@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\application;
+use App\Models\filter;
 use App\Models\text;
 use Illuminate\Http\Request;
 
@@ -18,7 +19,7 @@ class ApplicationController extends Controller
         //
     }
 
-    /**
+    /**middleware
      * Show the form for creating a new resource.
      *
      * @return \Illuminate\Http\Response
@@ -26,8 +27,9 @@ class ApplicationController extends Controller
     public function create()
     {
         $texts = text::all();
+        $filters = filter::all();
 
-        return view('newExhibitor', compact('texts'));
+        return view('newExhibitor', compact('texts', 'filters'));
     }
 
     /**
@@ -38,7 +40,26 @@ class ApplicationController extends Controller
      */
     public function store(Request $request)
     {
-        return view('application');
+        $filters = filter::all();
+        $app = application::all();
+
+        $input = $request->all();
+
+        $application = new application();
+
+        $application->name = $input['name'];
+        $application->phone = $input['phone'];
+        $application->website = $input['website'];
+        $application->address = $input['street'];
+        $application->postal_code = $input['postal'];
+        $application->city = $input['city'];
+        $application->country = $input['country'];
+        $application->description = $input['description'];
+        $application->is_bio = 1;
+
+        $application->save();
+
+        return $app;
 
     }
 
