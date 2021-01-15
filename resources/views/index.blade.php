@@ -46,22 +46,16 @@
         <div class="partners">
             <h2>Nos partenaires</h2>
             <div>
+                @foreach($parters as $partner)
                 <div class="partner">
                     <h3>
-                        <a href="https://www.rotaryclubflemalle.be/" class="partner__link">
+                        <a href="{{$partner->website}}" class="partner__link">
                             <span class="helper"></span>
-                            <img src="{{URL::asset('img/RotaryFlemalle.jpg')}}" alt="Rotary Club Flémalle" width="210" height="88">
+                            <img src="../storage/{{$partner->file_name}}" alt="{{$partner->name}}" width="210" height="88">
                         </a>
                     </h3>
                 </div>
-                <div class="partner">
-                    <h3>
-                        <a href="https://www.provincedeliege.be/" class="partner__link">
-                            <span class="helper"></span>
-                            <img src="{{URL::asset('img/ProvinceLiege.jpg')}}" alt="Province de Liège" width="210" height="88">
-                        </a>
-                    </h3>
-                </div>
+                @endforeach
             </div>
         </div>
     </main>

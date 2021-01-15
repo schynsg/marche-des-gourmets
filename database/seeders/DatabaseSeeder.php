@@ -21,6 +21,7 @@ class DatabaseSeeder extends Seeder
             ExtraSeeder::class,
             FilterSeeder::class,
             ExhibitorFilterSeeder::class,
+            PartnerSeeder::class,
         ]);
     }
 }
