@@ -33,27 +33,45 @@
             {{csrf_field()}}
             <div>
                 <label for="name">Nom de la société</label>
-                <input type="text" id="name" name="name" placeholder="Nom de la société">
+                <input type="text" id="name" name="name" placeholder="Nom de la société" class="@error('name') is-invalid @enderror" value="{{ old('name') }}">
+                @error('name')
+                <div class="alert alert-danger">{{ $message }}</div>
+                @enderror
             </div>
             <div>
-                <label for="phone">Téléphoné</label>
-                <input type="tel" name="phone" id="phone" placeholder="Votre téléphone">
+                <label for="phone">Téléphone</label>
+                <input type="tel" name="phone" id="phone" placeholder="Votre téléphone" class="@error('phone') is-invalid @enderror" value="{{ old('phone') }}">
+                @error('phone')
+                <div class="alert alert-danger">{{ $message }}</div>
+                @enderror
             </div>
             <div>
                 <label for="website">Site internet</label>
-                <input type="url" name="website" id="website" placeholder="Votre site internet">
+                <input type="url" name="website" id="website" placeholder="Votre site internet"  class="@error('website') is-invalid @enderror" value="{{ old('website') }}">
+                @error('website')
+                <div class="alert alert-danger">{{ $message }}</div>
+                @enderror
             </div>
             <div>
                 <label for="street">Rue et numéro</label>
-                <input type="text" name="street" id="name" placeholder="Votre rue et numéro">
+                <input type="text" name="street" id="name" placeholder="Votre rue et numéro" class="@error('street') is-invalid @enderror" value="{{ old('street') }}">
+                @error('street')
+                <div class="alert alert-danger">{{ $message }}</div>
+                @enderror
             </div>
             <div>
                 <label for="postal">Code postal</label>
-                <input type="number" name="postal" id="postal" placeholder="Votre code postal">
+                <input type="number" name="postal" id="postal" placeholder="Votre code postal" class="@error('postal') is-invalid @enderror" value="{{ old('postal') }}">
+                @error('postal')
+                <div class="alert alert-danger">{{ $message }}</div>
+                @enderror
             </div>
             <div>
                 <label for="city">Votre ville</label>
-                <input type="text" name="city" id="city" placeholder="Votre ville">
+                <input type="text" name="city" id="city" placeholder="Votre ville" class="@error('city') is-invalid @enderror" value="{{ old('city') }}">
+                @error('city')
+                <div class="alert alert-danger">{{ $message }}</div>
+                @enderror
             </div>
             <div>
                 <label for="country">Pays</label>
@@ -325,7 +343,10 @@
             @endif
             <div>
                 <label for="description">Descriptif de vos produits</label>
-                <textarea name="description" id="description" rows="6" placeholder="Vos produits"></textarea>
+                <textarea name="description" id="description" rows="6" placeholder="Vos produits" class="@error('desctiption') is-invalid @enderror">{{ old('description') }}</textarea>
+                @error('description')
+                <div class="alert alert-danger">{{ $message }}</div>
+                @enderror
             </div>
             <div>
                 <input type="checkbox" name="bio" id="bio">

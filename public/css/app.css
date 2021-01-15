@@ -1739,3 +1739,13 @@ div.choices {
   border-left: none;
 }
 
+div.alert {
+  color: #d70f1c;
+  font-size: 0.7em;
+  margin-top: 0.5em;
+}
+
+div.alert::before {
+  content: "! ";
+}
+
