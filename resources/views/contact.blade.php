@@ -27,18 +27,28 @@
         </div>
         <div>
             <h3>Formulaire de contact</h3>
-            <form action="#" class="contact__form">
+            <form action="/newMessage" method="post" class="contact__form">
+                {{csrf_field()}}
                 <div>
                     <label for="name">Nom et prénom</label>
-                    <input type="text" id="name" name="name" placeholder="Votre nom et prénom">
+                    <input type="text" id="name" name="name" placeholder="Votre nom et prénom"  class="@error('name') is-invalid @enderror" value="{{ old('name') }}">
+                    @error('name')
+                    <div class="alert alert-danger">{{ $message }}</div>
+                    @enderror
                 </div>
                 <div>
                     <label for="email">Votre adresse e-mail</label>
-                    <input type="email" name="email" id="email" placeholder="Votre adresse e-mail">
+                    <input type="email" name="email" id="email" placeholder="Votre adresse e-mail" class="@error('email') is-invalid @enderror" value="{{ old('email') }}">
+                    @error('email')
+                    <div class="alert alert-danger">{{ $message }}</div>
+                    @enderror
                 </div>
                 <div>
                     <label for="message">Votre message</label>
-                    <textarea name="message" id="message" rows="10" placeholder="Bonjour,..."></textarea>
+                    <textarea name="message" id="message" rows="10" placeholder="Bonjour,..." class="@error('message') is-invalid @enderror">{{ old('message') }}</textarea>
+                    @error('message')
+                    <div class="alert alert-danger">{{ $message }}</div>
+                    @enderror
                 </div>
                 <input type="submit" value="Envoyer">
             </form>

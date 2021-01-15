@@ -58,7 +58,7 @@ Route::get('/contact', function () {
     return view('contact');
 });
 */
-Route::get('/contact', [\App\Http\Controllers\ContactController::class, 'index']);
+Route::get('/contact', [\App\Http\Controllers\MessageController::class, 'create']);
 
 
 /*
@@ -77,4 +77,6 @@ Route::get('/ticketing', [\App\Http\Controllers\TicketController::class, 'index'
 
 
 Route::post('/newApplication', [\App\Http\Controllers\ApplicationController::class, 'store']);
+
+Route::post('/newMessage', [\App\Http\Controllers\MessageController::class, 'store']);
 
