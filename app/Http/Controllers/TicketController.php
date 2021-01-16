@@ -11,7 +11,8 @@ class TicketController extends Controller
     public function index()
     {
         $texts = text::all();
+        $price = 6;
 
-        return view('ticketing', compact('texts'));
+        return view('ticketing', compact('texts', 'price'));
     }
 }

@@ -80,3 +80,6 @@ Route::post('/newApplication', [\App\Http\Controllers\ApplicationController::cla
 
 Route::post('/newMessage', [\App\Http\Controllers\MessageController::class, 'store']);
 
+
+Route::get('/payment', [\App\Http\Controllers\CheckoutController::class, 'index']);
+Route::post('/payment', [\App\Http\Controllers\CheckoutController::class, 'store']);
