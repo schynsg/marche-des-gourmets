@@ -21,36 +21,15 @@
         <div class="intro__background"></div>
     </div>
     <div class="infos__content">
-        <div>
-            <h3>18<sup>e</sup> Marché des Gourmets 2019</h3>
-            <div class="image__div">
-                <img src="{{URL::asset('img/exemple.png')}}" alt="18e Marché des Gourmets 2019" height="215" width="320">
+            <div>
+                <h3>Quelques photos d'archive</h3>
+                @foreach($images as $image)
+                    <div class="image__div">
+                        <img src="../storage/{{$image->file_name}}" alt="{{$image->alternative}}" height="215" width="320">
+                    </div>
+                @endforeach
             </div>
-            <div class="image__div">
-                <img src="{{URL::asset('img/exemple.png')}}" alt="18e Marché des Gourmets 2019" height="215" width="320">
-            </div>
-            <div class="image__div">
-                <img src="{{URL::asset('img/exemple.png')}}" alt="18e Marché des Gourmets 2019" height="215" width="320">
-            </div>
-            <div class="image__div">
-                <img src="{{URL::asset('img/exemple.png')}}" alt="18e Marché des Gourmets 2019" height="215" width="320">
-            </div>
-        </div>
-        <div>
-            <h3>17<sup>e</sup> Marché des Gourmets 2018</h3>
-            <div class="image__div">
-                <img src="{{URL::asset('img/exemple.png')}}" alt="17e Marché des Gourmets 2018" height="215" width="320">
-            </div>
-            <div class="image__div">
-                <img src="{{URL::asset('img/exemple.png')}}" alt="17e Marché des Gourmets 2018" height="215" width="320">
-            </div>
-            <div class="image__div">
-                <img src="{{URL::asset('img/exemple.png')}}" alt="17e Marché des Gourmets 2018" height="215" width="320">
-            </div>
-            <div class="image__div">
-                <img src="{{URL::asset('img/exemple.png')}}" alt="17e Marché des Gourmets 2018" height="215" width="320">
-            </div>
-        </div>
+        {{$images->links()}}
     </div>
 </main>
 @include('components.footer')

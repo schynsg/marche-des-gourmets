@@ -3,11 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\image;
-use App\Models\image_folder;
-use App\Models\picture;
 use Illuminate\Http\Request;
 
-class PictureController extends Controller
+class ImageController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,9 +14,7 @@ class PictureController extends Controller
      */
     public function index()
     {
-        $images = image::paginate(2);
-
-        return view('pictures', compact('images'));
+        //
     }
 
     /**
@@ -45,10 +41,10 @@ class PictureController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\picture  $picture
+     * @param  \App\Models\image  $image
      * @return \Illuminate\Http\Response
      */
-    public function show(picture $picture)
+    public function show(image $image)
     {
         //
     }
@@ -56,10 +52,10 @@ class PictureController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\picture  $picture
+     * @param  \App\Models\image  $image
      * @return \Illuminate\Http\Response
      */
-    public function edit(picture $picture)
+    public function edit(image $image)
     {
         //
     }
@@ -68,10 +64,10 @@ class PictureController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\picture  $picture
+     * @param  \App\Models\image  $image
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, picture $picture)
+    public function update(Request $request, image $image)
     {
         //
     }
@@ -79,10 +75,10 @@ class PictureController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\picture  $picture
+     * @param  \App\Models\image  $image
      * @return \Illuminate\Http\Response
      */
-    public function destroy(picture $picture)
+    public function destroy(image $image)
     {
         //
     }
