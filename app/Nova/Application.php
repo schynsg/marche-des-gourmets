@@ -108,4 +108,19 @@ class Application extends Resource
     {
         return [];
     }
+
+    public static function searchable()
+    {
+        return false;
+    }
+
+    public static function authorizedToCreate(Request $request)
+    {
+        return false;
+    }
+
+    public function authorizedToUpdate(Request $request)
+    {
+        return false;
+    }
 }

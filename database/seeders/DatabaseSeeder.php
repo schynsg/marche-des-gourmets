@@ -22,7 +22,8 @@ class DatabaseSeeder extends Seeder
             FilterSeeder::class,
             ExhibitorFilterSeeder::class,
             PartnerSeeder::class,
-            ImageSeeder::class
+            ImageSeeder::class,
+            UserSeeder::class,
         ]);
     }
 }

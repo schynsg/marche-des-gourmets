@@ -92,4 +92,9 @@ class text extends Resource
     {
         return [];
     }
+
+    public static function authorizedToCreate(Request $request)
+    {
+        return false;
+    }
 }
