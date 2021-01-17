@@ -55,7 +55,7 @@ class MessageController extends Controller
 
         $message->save();
 
-        return view('welcome');
+        return view('messageSent');
 
     }
 
