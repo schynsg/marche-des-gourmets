@@ -100,6 +100,11 @@ class TextSeeder extends Seeder
                     'content' =>
                         'Merci de bien vouloir sélectionner le <b>nombre d\'entrées</b> que vous désirez.',
                 ],
+                [
+                    'title' => 'Price',
+                    'content' =>
+                        '6',
+                ],
             ];
         foreach ($texts as $text) {
             text::create($text);

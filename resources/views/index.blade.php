@@ -10,16 +10,16 @@
 </head>
 <body>
     @include('components.header')
-    <main class="index__main">
+    <main class="index__main"  itemscope itemtype="https://schema.org/Event">
         <div class="index__intro">
             <div>
                 <div class="intro__text">
                     <div class="intro__title">
-                        <h2>{{$texts->where('title', '=', 'Edition number')->first()->content}}<sup>e</sup> Marché des Gourmets</h2>
-                        <p>{{$texts->where('title', '=', 'Date')->first()->content}}</p>
+                        <h2 itemprop="about">{{$texts->where('title', '=', 'Edition number')->first()->content}}<sup>e</sup> Marché des Gourmets</h2>
+                        <p itemprop="startDate">{{$texts->where('title', '=', 'Date')->first()->content}}</p>
                     </div>
                     <div class="intro__content">
-                        <p>Organisé par le Rotary Club de Flémalle</p>
+                        <p itemprop="organizer">Organisé par le Rotary Club de Flémalle</p>
                     </div>
                 </div>
                 <div class="intro__link">
@@ -27,7 +27,7 @@
                 </div>
             </div>
             <div class="intro__img">
-                <img src="{{URL::asset('img/Presentation_MarcheDesGourmets.jpg')}}" alt="Présentation du Marché des Gourmets" height="648" width="560">
+                <img src="{{URL::asset('img/Presentation_MarcheDesGourmets.jpg')}}" alt="Présentation du Marché des Gourmets" height="648" width="560" itemprop="image">
             </div>
             <div class="intro__background"></div>
         </div>
@@ -51,7 +51,7 @@
                     <h3>
                         <a href="{{$partner->website}}" class="partner__link">
                             <span class="helper"></span>
-                            <img src="../storage/{{$partner->file_name}}" alt="{{$partner->name}}" width="210" height="88">
+                            <img src="../storage/{{$partner->file_name}}" alt="{{$partner->name}}" width="210" height="88" itemprop="sponsor">
                         </a>
                     </h3>
                 </div>

@@ -1,4 +1,4 @@
-<div class="exhib__content">
+<div class="exhib__content" itemscope itemtype="https://schema.org/Event">
     <h2>Liste de nos exposants</h2>
     <div class="exhibitors">
         <div class="exhib__forms">
@@ -26,7 +26,7 @@
                 @foreach($exhibitors as $exhibitor)
                     <li class="exhibitor">
                         <div class="exhibitor__infos">
-                            <h3 @if($exhibitor->is_bio)class="bio"@endif>{{$exhibitor->name}}</h3>
+                            <h3 @if($exhibitor->is_bio)class="bio"@endif itemprop="performer">{{$exhibitor->name}}</h3>
                             <p class="exhibitor__address">{{$exhibitor->address}}, {{$exhibitor->postal_code}} {{$exhibitor->city}} ({{$exhibitor->country}})</p>
                             <p class="exhibitors__products">{{$exhibitor->description}}</p>
                         </div>

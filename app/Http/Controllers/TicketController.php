@@ -11,7 +11,8 @@ class TicketController extends Controller
     public function index()
     {
         $texts = text::all();
-        $price = 6;
+        $price = floatval(text::query()->where('title','LIKE', 'price')->first()->content);
+
 
         return view('ticketing', compact('texts', 'price'));
     }
