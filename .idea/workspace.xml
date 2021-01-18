@@ -4,7 +4,9 @@
     <list default="true" id="3bf8d15f-c1bf-410f-a1c6-d01ccec63d63" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Exhib.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Exhib.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Exhibitors.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Exhibitors.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/TextSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/TextSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/en/pagination.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/pagination.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -219,7 +221,7 @@
       <workItem from="1610461072489" duration="5204000" />
       <workItem from="1610466752195" duration="75340000" />
       <workItem from="1610797308974" duration="43347000" />
-      <workItem from="1610965023283" duration="11305000" />
+      <workItem from="1610965023283" duration="13213000" />
     </task>
     <servers />
   </component>

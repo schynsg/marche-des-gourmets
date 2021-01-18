@@ -19,7 +19,7 @@ class Exhib extends Component
     {
         $texts = Text::all();
         $filters = Filter::all();
-        $exhibitorsAll = Exhibitor::query()->where('name','LIKE', '%'. $this->searchTerm . '%')->orWhere('city','LIKE', '%'. $this->searchTerm . '%')->orWhere('description','LIKE', '%'. $this->searchTerm . '%')->paginate(2);
+        $exhibitorsAll = Exhibitor::query()->where('name','LIKE', '%'. $this->searchTerm . '%')->orWhere('city','LIKE', '%'. $this->searchTerm . '%')->orWhere('description','LIKE', '%'. $this->searchTerm . '%')->paginate(10);
         $exhibitorsFiltered = [];
 
         for ($i = 0; $i < count($exhibitorsAll->items()); $i++) {

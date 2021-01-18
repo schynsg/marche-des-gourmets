@@ -1980,3 +1980,11 @@ div.alert::before {
   height: 1em;
 }
 
+@media screen and (max-width: 800px) {
+  .checkout__main form {
+    max-width: 80vw;
+    min-width: 0;
+    width: 60vw;
+  }
+}
+

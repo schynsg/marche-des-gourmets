@@ -84,7 +84,7 @@ class TextSeeder extends Seeder
                 [
                     'title' => 'New exhibitors page introduction',
                     'content' =>
-                        'Vous êtes producteurs, vignerons commerçants, épiciers,... Vous pouvez compléter ce formulaire afin de nous soumettre votre <b>inscription</b>. Veuillez noter que, au vu des <b>places limitées</b>, nous sommes obligés de limiter le nombre d\'exposants. Nous reviendrons donc vers vous après votre inscription.',
+                        'Vous êtes producteurs, vignerons, commerçants, épiciers,... Vous pouvez compléter ce formulaire afin de nous soumettre votre <b>inscription</b>. Veuillez noter que, au vu des <b>places limitées</b>, nous sommes obligés de limiter le nombre d\'exposants. Nous reviendrons donc vers vous après votre inscription.',
                 ],
                 [
                     'title' => 'Contact informations',
