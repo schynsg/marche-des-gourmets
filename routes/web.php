@@ -83,3 +83,5 @@ Route::post('/newMessage', [\App\Http\Controllers\MessageController::class, 'sto
 
 Route::get('/payment', [\App\Http\Controllers\CheckoutController::class, 'index']);
 Route::post('/payment', [\App\Http\Controllers\CheckoutController::class, 'store']);
+
+//test
