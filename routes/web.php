@@ -19,7 +19,7 @@ Route::get('/', function () {
     return view('index');
 });
 */
-Route::get('http://134.209.233.245/', [\App\Http\Controllers\IndexController::class, 'index']);
+Route::get('/', [\App\Http\Controllers\IndexController::class, 'index']);
 
 
 /*
