@@ -15,7 +15,7 @@ class message extends Resource
      *
      * @var string
      */
-    public static $model = \App\Models\message::class;
+    public static $model = \App\Models\Message::class;
 
     /**
      * The single value that should be used to represent the resource when being displayed.

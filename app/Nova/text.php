@@ -14,7 +14,7 @@ class text extends Resource
      *
      * @var string
      */
-    public static $model = \App\Models\text::class;
+    public static $model = \App\Models\Text::class;
 
     /**
      * The single value that should be used to represent the resource when being displayed.

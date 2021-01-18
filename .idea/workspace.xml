@@ -3,14 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="3bf8d15f-c1bf-410f-a1c6-d01ccec63d63" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/ExhibitorFilterSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/ExhibitorFilterSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/ExhibitorSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/ExhibitorSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/ExtraSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/ExtraSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/FilterSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/FilterSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/ImageSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/ImageSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/InfoSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/InfoSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/PartnerSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/PartnerSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/TextSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/TextSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Nova/filter.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Nova/filter.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Nova/image.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Nova/image.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Nova/message.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Nova/message.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Nova/partner.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Nova/partner.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Nova/text.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Nova/text.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -225,7 +222,7 @@
       <workItem from="1610461072489" duration="5204000" />
       <workItem from="1610466752195" duration="75340000" />
       <workItem from="1610797308974" duration="43347000" />
-      <workItem from="1610965023283" duration="10415000" />
+      <workItem from="1610965023283" duration="10611000" />
     </task>
     <servers />
   </component>

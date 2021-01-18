@@ -15,7 +15,7 @@ class partner extends Resource
      *
      * @var string
      */
-    public static $model = \App\Models\partner::class;
+    public static $model = \App\Models\Partner::class;
 
     /**
      * The single value that should be used to represent the resource when being displayed.
