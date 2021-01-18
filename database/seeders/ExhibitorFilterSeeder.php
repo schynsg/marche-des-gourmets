@@ -2,7 +2,7 @@
 
 namespace Database\Seeders;
 
-use App\Models\exhibitor_filter;
+use App\Models\Exhibitor_filter;
 use Illuminate\Database\Seeder;
 
 class ExhibitorFilterSeeder extends Seeder
@@ -42,7 +42,7 @@ class ExhibitorFilterSeeder extends Seeder
                 ],
             ];
         foreach ($exhibitors_filters as $exhibitors_filter) {
-            exhibitor_filter::create($exhibitors_filter);
+            Exhibitor_filter::create($exhibitors_filter);
         }
     }
 }

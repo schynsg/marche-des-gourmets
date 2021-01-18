@@ -2,7 +2,7 @@
 
 namespace Database\Seeders;
 
-use App\Models\exhibitor;
+use App\Models\Exhibitor;
 use Illuminate\Database\Seeder;
 
 class ExhibitorSeeder extends Seeder
@@ -62,7 +62,7 @@ class ExhibitorSeeder extends Seeder
                 ],
             ];
         foreach ($exhibitors as $exhibitor) {
-            exhibitor::create($exhibitor);
+            Exhibitor::create($exhibitor);
         }
     }
 }

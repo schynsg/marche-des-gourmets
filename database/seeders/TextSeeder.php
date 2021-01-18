@@ -2,7 +2,7 @@
 
 namespace Database\Seeders;
 
-use App\Models\text;
+use App\Models\Text;
 use Illuminate\Database\Seeder;
 
 class TextSeeder extends Seeder
@@ -107,7 +107,7 @@ class TextSeeder extends Seeder
                 ],
             ];
         foreach ($texts as $text) {
-            text::create($text);
+            Text::create($text);
         }
     }
 }

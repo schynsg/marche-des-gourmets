@@ -2,7 +2,7 @@
 
 namespace Database\Seeders;
 
-use App\Models\info;
+use App\Models\Info;
 use Illuminate\Database\Seeder;
 
 class InfoSeeder extends Seeder
@@ -37,7 +37,7 @@ class InfoSeeder extends Seeder
                 ],
             ];
         foreach ($infos as $info) {
-            info::create($info);
+            Info::create($info);
         }
     }
 }

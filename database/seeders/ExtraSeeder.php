@@ -2,7 +2,7 @@
 
 namespace Database\Seeders;
 
-use App\Models\extra;
+use App\Models\Extra;
 use Illuminate\Database\Seeder;
 
 class ExtraSeeder extends Seeder
@@ -43,7 +43,7 @@ class ExtraSeeder extends Seeder
                 ],
             ];
         foreach ($extras as $extra) {
-            extra::create($extra);
+            Extra::create($extra);
         }
     }
 }

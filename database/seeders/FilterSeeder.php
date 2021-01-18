@@ -2,7 +2,7 @@
 
 namespace Database\Seeders;
 
-use App\Models\filter;
+use App\Models\Filter;
 use Illuminate\Database\Seeder;
 
 class FilterSeeder extends Seeder
@@ -42,7 +42,7 @@ class FilterSeeder extends Seeder
                 ],
             ];
         foreach ($filters as $filter) {
-            filter::create($filter);
+            Filter::create($filter);
         }
     }
 }

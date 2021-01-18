@@ -2,7 +2,7 @@
 
 namespace Database\Seeders;
 
-use App\Models\image;
+use App\Models\Image;
 use Illuminate\Database\Seeder;
 
 class ImageSeeder extends Seeder
@@ -50,7 +50,7 @@ class ImageSeeder extends Seeder
                 ],
             ];
         foreach ($images as $image) {
-            image::create($image);
+            Image::create($image);
         }
     }
 }
