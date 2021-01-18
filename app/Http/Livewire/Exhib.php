@@ -2,9 +2,9 @@
 
 namespace App\Http\Livewire;
 
-use App\Models\exhibitor;
-use App\Models\filter;
-use App\Models\text;
+use App\Models\Exhibitor;
+use App\Models\Filter;
+use App\Models\Text;
 use Livewire\Component;
 use Livewire\WithPagination;
 
@@ -17,9 +17,9 @@ class Exhib extends Component
 
     public function render()
     {
-        $texts = text::all();
-        $filters = filter::all();
-        $exhibitorsAll = exhibitor::query()->where('name','LIKE', '%'. $this->searchTerm . '%')->orWhere('city','LIKE', '%'. $this->searchTerm . '%')->orWhere('description','LIKE', '%'. $this->searchTerm . '%')->paginate(2);
+        $texts = Text::all();
+        $filters = Filter::all();
+        $exhibitorsAll = Exhibitor::query()->where('name','LIKE', '%'. $this->searchTerm . '%')->orWhere('city','LIKE', '%'. $this->searchTerm . '%')->orWhere('description','LIKE', '%'. $this->searchTerm . '%')->paginate(2);
         $exhibitorsFiltered = [];
 
         for ($i = 0; $i < count($exhibitorsAll->items()); $i++) {
