@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\message;
-use App\Models\text;
+use App\Models\Message;
+use App\Models\Text;
 use Illuminate\Http\Request;
 
 class MessageController extends Controller
@@ -25,7 +25,7 @@ class MessageController extends Controller
      */
     public function create()
     {
-        $texts = text::all();
+        $texts = Text::all();
 
         return view('contact', compact('texts'));
     }
@@ -47,7 +47,7 @@ class MessageController extends Controller
         $input = $request->all();
 
 
-        $message = new message();
+        $message = new Message();
 
         $message->name = $input['name'];
         $message->email = $input['email'];

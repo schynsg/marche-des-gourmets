@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\exhibitor;
-use App\Models\filter;
-use App\Models\text;
+use App\Models\Exhibitor;
+use App\Models\Filter;
+use App\Models\Text;
 use Illuminate\Http\Request;
 
 class ExhibitorController extends Controller
@@ -16,9 +16,9 @@ class ExhibitorController extends Controller
      */
     public function index()
     {
-        $exhibitors = exhibitor::paginate(10);
-        $texts = text::all();
-        $filters = filter::all();
+        $exhibitors = Exhibitor::paginate(10);
+        $texts = Text::all();
+        $filters = Filter::all();
 
         return view('exhibitors', compact('exhibitors', 'texts', 'filters'));
     }

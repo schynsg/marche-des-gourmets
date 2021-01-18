@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Text;
 use Cartalyst\Stripe\Laravel\Facades\Stripe;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
@@ -18,7 +19,7 @@ class CheckoutController extends Controller
     public function index(Request $request)
     {
         $number = $request->all()['number'];
-        $price = 6;
+        $price = floatval(Text::query()->where('title','LIKE', 'price')->first()->content);
         return view('checkout.index', compact('number', 'price'));
     }
 

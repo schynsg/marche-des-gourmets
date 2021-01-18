@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\exhibitor_filter;
+use App\Models\Exhibitor_filter;
 use Illuminate\Http\Request;
 
 class ExhibitorFilterController extends Controller

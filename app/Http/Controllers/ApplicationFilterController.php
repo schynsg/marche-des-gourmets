@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\application_filter;
+use App\Models\Application_filter;
 use Illuminate\Http\Request;
 
 class ApplicationFilterController extends Controller

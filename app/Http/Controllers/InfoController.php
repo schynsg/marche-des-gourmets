@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\info;
+use App\Models\Info;
 use Illuminate\Http\Request;
 
 class InfoController extends Controller
@@ -14,7 +14,7 @@ class InfoController extends Controller
      */
     public function index()
     {
-        $infos = info::all();
+        $infos = Info::all();
 
         return view('infos', compact('infos'));
     }

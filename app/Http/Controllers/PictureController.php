@@ -2,9 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\image;
-use App\Models\image_folder;
-use App\Models\picture;
+use App\Models\Image;
+use App\Models\Picture;
 use Illuminate\Http\Request;
 
 class PictureController extends Controller
@@ -16,7 +15,7 @@ class PictureController extends Controller
      */
     public function index()
     {
-        $images = image::paginate(10);
+        $images = Image::paginate(10);
 
         return view('pictures', compact('images'));
     }

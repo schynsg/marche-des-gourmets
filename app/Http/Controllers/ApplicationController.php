@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\application;
-use App\Models\exhibitor;
-use App\Models\filter;
-use App\Models\text;
+use App\Models\Application;
+use App\Models\Exhibitor;
+use App\Models\Filter;
+use App\Models\Text;
 use Illuminate\Http\Request;
 
 class ApplicationController extends Controller
@@ -27,8 +27,8 @@ class ApplicationController extends Controller
      */
     public function create()
     {
-        $texts = text::all();
-        $filters = filter::all();
+        $texts = Text::all();
+        $filters = Filter::all();
 
         return view('newExhibitor', compact('texts', 'filters'));
     }
@@ -55,7 +55,7 @@ class ApplicationController extends Controller
         $input = $request->all();
 
 
-        $application = new application();
+        $application = new Application();
 
         $application->name = $input['name'];
         $application->phone = $input['phone'];
