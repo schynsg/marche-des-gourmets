@@ -17,7 +17,7 @@ class DatabaseSeeder extends Seeder
         $this->call([
             ExhibitorSeeder::class,
             InfoSeeder::class,
-            textSeeder::class,
+            TextSeeder::class,
             ExtraSeeder::class,
             FilterSeeder::class,
             ExhibitorFilterSeeder::class,
