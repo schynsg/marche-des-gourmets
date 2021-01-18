@@ -3,11 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3bf8d15f-c1bf-410f-a1c6-d01ccec63d63" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Nova/Application.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Nova/Application.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Nova/image.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Nova/image.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Nova/message.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Nova/message.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Nova/text.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Nova/text.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/errors/404.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/errors/404.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -221,7 +217,8 @@
       <workItem from="1610193599361" duration="12023000" />
       <workItem from="1610461072489" duration="5204000" />
       <workItem from="1610466752195" duration="75340000" />
-      <workItem from="1610797308974" duration="43262000" />
+      <workItem from="1610797308974" duration="43347000" />
+      <workItem from="1610965023283" duration="1236000" />
     </task>
     <servers />
   </component>
