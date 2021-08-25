@@ -24,6 +24,7 @@ class CreateExhibitorsTable extends Migration
             $table->string('country');
             $table->mediumText('description');
             $table->boolean('is_bio');
+            $table->boolean('active');
             $table->timestamps();
         });
     }

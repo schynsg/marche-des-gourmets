@@ -26,6 +26,7 @@ class ExhibitorSeeder extends Seeder
                     'country' => 'BE',
                     'description' => 'Foie gras, magrets, filets, rillettes, cuisses confites de canard et dérivés',
                     'is_bio' => 0,
+                    'active' => 1,
                 ],
                 [
                     'name' => 'Daphne Olive Oil',
@@ -37,6 +38,7 @@ class ExhibitorSeeder extends Seeder
                     'country' => 'BE',
                     'description' => 'Huile d\'olives grecque (région de Kalamata)',
                     'is_bio' => 1,
+                    'active' => 1,
                 ],
                 [
                     'name' => 'Sweet Cuberdons - Bonbons à l\'ancienne',
@@ -48,6 +50,7 @@ class ExhibitorSeeder extends Seeder
                     'country' => 'BE',
                     'description' => 'Cuberdons artisanaux',
                     'is_bio' => 0,
+                    'active' => 1,
                 ],
                 [
                     'name' => 'La Boutique du Champignon',
@@ -59,6 +62,7 @@ class ExhibitorSeeder extends Seeder
                     'country' => 'FR',
                     'description' => 'Produits gastronomiques autour de la thématique du champignon',
                     'is_bio' => 1,
+                    'active' => 1,
                 ],
             ];
         foreach ($exhibitors as $exhibitor) {
