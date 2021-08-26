@@ -93,4 +93,10 @@ class partner extends Resource
     {
         return [];
     }
+
+    public static function label() {
+        return 'Partenaires';
+    }
+
+    public static $group = 'Général';
 }

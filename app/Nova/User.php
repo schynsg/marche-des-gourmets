@@ -106,4 +106,6 @@ class User extends Resource
     {
         return [];
     }
+
+    public static $displayInNavigation = false;
 }

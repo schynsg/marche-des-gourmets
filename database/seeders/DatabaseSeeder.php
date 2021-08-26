@@ -16,7 +16,6 @@ class DatabaseSeeder extends Seeder
         // \App\Models\User::factory(10)->create();
         $this->call([
             ExhibitorSeeder::class,
-            InfoSeeder::class,
             ExtraSeeder::class,
             FilterSeeder::class,
             ExhibitorFilterSeeder::class,

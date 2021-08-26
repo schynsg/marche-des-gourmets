@@ -98,4 +98,10 @@ class image extends Resource
     {
         return false;
     }
+
+    public static function label() {
+        return 'Photos';
+    }
+
+    public static $group = 'Pages photos';
 }

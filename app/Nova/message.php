@@ -104,4 +104,10 @@ class message extends Resource
     {
         return false;
     }
+
+    public static function label() {
+        return 'Messages reçus';
+    }
+
+    public static $group = 'Général';
 }

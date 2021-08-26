@@ -3,6 +3,7 @@
 namespace App\Nova;
 
 use Illuminate\Http\Request;
+use Laravel\Nova\Fields\BelongsToMany;
 use Laravel\Nova\Fields\Boolean;
 use Laravel\Nova\Fields\HasMany;
 use Laravel\Nova\Fields\ID;
@@ -25,7 +26,7 @@ class Exhibitor extends Resource
      *
      * @var string
      */
-    public static $title = 'id';
+    public static $title = 'name';
 
     /**
      * The columns that should be searched.
@@ -52,17 +53,17 @@ class Exhibitor extends Resource
     public function fields(Request $request)
     {
         return [
-            ID::make(__('ID'), 'id')->sortable(),
-            Text::make('name')->sortable(),
-            Text::make('phone'),
-            Text::make('website'),
-            Text::make('address'),
-            Text::make('postal code')->sortable(),
-            Text::make('city')->sortable(),
-            Text::make('country')->sortable(),
-            Textarea::make('description'),
-            Boolean::make('is bio')->sortable(),
-            HasMany::make('filters', 'filters', 'App\Nova\filter'),
+            Boolean::make(__('Actif'), 'active')->sortable(),
+            Text::make(__('Nom'), 'name')->sortable(),
+            Text::make(__('Téléphone'),'phone'),
+            Text::make(__('Site web'),'website'),
+            Text::make(__('Adresse'), 'address'),
+            Text::make(__('Code postal'), 'postal_code'),
+            Text::make(__('Ville'), 'city'),
+            Text::make(__('Pays'), 'country')->sortable(),
+            Textarea::make(__('Description'), 'description'),
+            Boolean::make(__('Bio'), 'is_bio')->sortable(),
+            BelongsToMany::make('Filtres', 'filters', 'App\Nova\filter'),
         ];
     }
 
@@ -109,4 +110,10 @@ class Exhibitor extends Resource
     {
         return [];
     }
+
+    public static function label() {
+        return 'Exposants';
+    }
+
+    public static $group = 'Général';
 }

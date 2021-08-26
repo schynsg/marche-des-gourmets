@@ -20,7 +20,7 @@ class filter extends Resource
      *
      * @var string
      */
-    public static $title = 'id';
+    public static $title = 'text';
 
     /**
      * The columns that should be searched.
@@ -28,8 +28,6 @@ class filter extends Resource
      * @var array
      */
     public static $search = [
-        'id',
-        'value',
         'text',
     ];
 
@@ -42,8 +40,6 @@ class filter extends Resource
     public function fields(Request $request)
     {
         return [
-            ID::make(__('ID'), 'id')->sortable(),
-            \Laravel\Nova\Fields\Text::make('value')->sortable(),
             \Laravel\Nova\Fields\Text::make('text')->sortable(),
         ];
     }
@@ -91,4 +87,6 @@ class filter extends Resource
     {
         return [];
     }
+
+    public static $displayInNavigation = false;
 }
