@@ -15,7 +15,7 @@ class CreateParamsTable extends Migration
     {
         Schema::create('params', function (Blueprint $table) {
             $table->id();
-            $table->decimal('price', $scale="2");
+            $table->decimal('price');
             $table->integer('age_for_free');
             $table->string('address');
             $table->string('contact_address');

@@ -3,11 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="3bf8d15f-c1bf-410f-a1c6-d01ccec63d63" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/about.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/about.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/exhibitors.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/exhibitors.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/newExhibitor.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/newExhibitor.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/ticketing.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/ticketing.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TextController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Text.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Nova/Application.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Nova/text.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/TextFactory.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_01_03_140002_create_texts_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_08_26_191035_create_params_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_08_26_191035_create_params_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/TextSeeder.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -228,7 +232,8 @@
       <workItem from="1613999949851" duration="310000" />
       <workItem from="1614000472939" duration="174000" />
       <workItem from="1629920010941" duration="2328000" />
-      <workItem from="1630004059973" duration="4789000" />
+      <workItem from="1630004059973" duration="4975000" />
+      <workItem from="1630010481659" duration="252000" />
     </task>
     <servers />
   </component>
