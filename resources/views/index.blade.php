@@ -35,10 +35,14 @@
             <h2>Bienvenue sur le site du Marché des Gourmets</h2>
             <div class="welcome__text">
                 <div>
-                    <p>{!!nl2br($texts->where('title', '=', 'Index welcome first part')->first()->content)!!}</p>
+                    <p>Vous y trouverez toutes les informations concernant cet événement annuel se tenant dans le merveilleux cadre du <b>Val Saint Lambert (BE)</b>.</p>
+                    <p>Marché des Gourmets est une organisation du <b>Rotary club de Flémalle</b> en partenariat avec le <b>Collège Provincial de Liège</b>.</p>
                 </div>
                 <div>
-                    <p>{!!nl2br($texts->where('title', '=', 'Index welcome second part')->first()->content)!!}</p>
+                    <p>Il est placé sous le patronage de :</p>
+                    <p><b>Mme Isabelle SIMONIS</b>, Ministre de la Fédération Wallonie-Bruxelles</p>
+                    <p><b>M. Paul-Emile MOTTARD</b>, Député provincial-Président et les membres du Collège provincial de Liège</p>
+                    <p><b>M. Jean-Michel JAVAUX</b>, Bourgmestre d'Amay</p>
                 </div>
             </div>
             <a href="{{ url('/about') }}">Découvrir le marché</a>

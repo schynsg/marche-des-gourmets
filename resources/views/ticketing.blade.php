@@ -18,7 +18,7 @@
                     <h2>Billeterie</h2>
                 </div>
                 <div class="intro__content">
-                    <p>{!!nl2br($texts->where('title', '=', 'Ticketing page introduction')->first()->content)!!}</p>
+                    <p>Merci de bien vouloir sélectionner le <b>nombre d'entrées</b> que vous désirez.</p>
                 </div>
             </div>
         </div>

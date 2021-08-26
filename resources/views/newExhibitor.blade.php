@@ -18,7 +18,7 @@
                     <h2>Devenir exposant</h2>
                 </div>
                 <div class="intro__content">
-                    <p>{!!nl2br($texts->where('title', '=', 'New exhibitors page introduction')->first()->content)!!}</p>
+                    <p>Vous êtes producteurs, vignerons, commerçants, épiciers,... Vous pouvez compléter ce formulaire afin de nous soumettre votre <b>inscription</b>. Veuillez noter que, au vu des <b>places limitées</b>, nous sommes obligés de limiter le nombre d'exposants. Nous reviendrons donc vers vous après votre inscription.</p>
                 </div>
             </div>
         </div>

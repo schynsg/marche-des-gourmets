@@ -19,7 +19,7 @@
                     <h2>Découvrez nos exposants</h2>
                 </div>
                 <div class="intro__content">
-                    <p>{!!nl2br($texts->where('title', '=', 'Exhibitors page introduction')->first()->content)!!}</p>
+                    <p>Nous avons sélectionnez une <b>trentaine d'exposants</b> pour vous accueillir au Marché des Gourmets, qu'ils soient producteurs, vignerons commerçants, épiciers,... Nous les avons sélectionnés pour la <b>passion</b> qu'ils transmettent dans leurs <b>produits de qualités</b>.</p>
                 </div>
             </div>
         </div>
