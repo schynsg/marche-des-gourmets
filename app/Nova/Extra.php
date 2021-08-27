@@ -22,7 +22,7 @@ class Extra extends Resource
      *
      * @var string
      */
-    public static $title = 'id';
+    public static $title = 'title';
 
     /**
      * The columns that should be searched.
@@ -30,10 +30,7 @@ class Extra extends Resource
      * @var array
      */
     public static $search = [
-        'id',
-        'title',
-        'content',
-        'svg',
+        'title'
     ];
 
     /**
@@ -45,10 +42,8 @@ class Extra extends Resource
     public function fields(Request $request)
     {
         return [
-            ID::make(__('ID'), 'id')->sortable(),
-            Text::make('title')->sortable(),
-            Textarea::make('content'),
-            Textarea::make('svg'),
+            Text::make(__('Titre'), 'title')->sortable(),
+            Textarea::make(__('Contenu'), 'content'),
         ];
     }
 

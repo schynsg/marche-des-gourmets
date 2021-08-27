@@ -22,7 +22,7 @@ class partner extends Resource
      *
      * @var string
      */
-    public static $title = 'id';
+    public static $title = 'name';
 
     /**
      * The columns that should be searched.
@@ -30,7 +30,6 @@ class partner extends Resource
      * @var array
      */
     public static $search = [
-        'id',
         'name'
     ];
 
@@ -43,10 +42,9 @@ class partner extends Resource
     public function fields(Request $request)
     {
         return [
-            ID::make(__('ID'), 'id')->sortable(),
-            Text::make('name')->sortable(),
-            Text::make('website'),
-            Image::make('file_name'),
+            Text::make(__('Nom'), 'name')->sortable(),
+            Text::make(__('Site web'), 'website'),
+            Image::make(__('Logo'), 'file_name')->maxWidth(300)->help('Largeur de l\'image maximum : 300px'),
         ];
     }
 

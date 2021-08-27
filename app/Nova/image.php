@@ -22,7 +22,7 @@ class image extends Resource
      *
      * @var string
      */
-    public static $title = 'id';
+    public static $title = 'alternative';
 
     /**
      * The columns that should be searched.
@@ -30,8 +30,7 @@ class image extends Resource
      * @var array
      */
     public static $search = [
-        'id',
-        'name'
+        'alternative'
     ];
 
     /**
@@ -43,9 +42,8 @@ class image extends Resource
     public function fields(Request $request)
     {
         return [
-            ID::make(__('ID'), 'id')->sortable(),
-            Text::make('alternative')->sortable(),
-            \Laravel\Nova\Fields\Image::make('file_name')
+            Text::make(__('Text altternatif'), 'alternative')->help('Text permettant de décrire l\'image')->sortable(),
+            \Laravel\Nova\Fields\Image::make(__('Image'), 'file_name')->maxWidth(700)->help('Largeur de l\'image maximum : 700px'),
         ];
     }
 
@@ -99,9 +97,5 @@ class image extends Resource
         return false;
     }
 
-    public static function label() {
-        return 'Photos';
-    }
-
-    public static $group = 'Pages photos';
+    public static $displayInNavigation = false;
 }

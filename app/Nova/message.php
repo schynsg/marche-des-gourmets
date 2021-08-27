@@ -22,7 +22,7 @@ class message extends Resource
      *
      * @var string
      */
-    public static $title = 'id';
+    public static $title = 'name';
 
     /**
      * The columns that should be searched.
@@ -30,7 +30,6 @@ class message extends Resource
      * @var array
      */
     public static $search = [
-        'id',
         'name',
         'email',
     ];
@@ -44,10 +43,9 @@ class message extends Resource
     public function fields(Request $request)
     {
         return [
-            ID::make(__('ID'), 'id')->sortable(),
-            Text::make('name')->sortable(),
-            Text::make('email')->sortable(),
-            Textarea::make('message'),
+            Text::make(__('Nom'), 'name')->sortable(),
+            Text::make(__('E-mail'), 'email'),
+            Textarea::make(__('Message'), 'message'),
         ];
     }
 

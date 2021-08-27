@@ -2,20 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3bf8d15f-c1bf-410f-a1c6-d01ccec63d63" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/marche-des-gourmets-laravel.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/marche-des-gourmets-laravel.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Nova/Exhibitor.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Nova/Exhibitor.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Nova/Extra.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Nova/Extra.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Nova/Info.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Nova/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Nova/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Nova/filter.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Nova/filter.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Nova/image.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Nova/image.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Nova/message.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Nova/message.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Nova/partner.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Nova/partner.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/InfoFactory.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_01_02_133632_create_infos_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/InfoSeeder.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/UserSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/UserSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,6 +167,7 @@
       <path value="$PROJECT_DIR$/vendor/stripe/stripe-php" />
       <path value="$PROJECT_DIR$/vendor/cartalyst/stripe-laravel" />
       <path value="$PROJECT_DIR$/vendor/cartalyst/stripe" />
+      <path value="$PROJECT_DIR$/vendor/intervention/image" />
     </include_path>
   </component>
   <component name="ProjectId" id="1lNTENKkX4OwBZbiudh9NMimF0m" />
@@ -238,6 +235,7 @@
       <workItem from="1629920010941" duration="2328000" />
       <workItem from="1630004059973" duration="4975000" />
       <workItem from="1630010481659" duration="4096000" />
+      <workItem from="1630078981269" duration="7776000" />
     </task>
     <servers />
   </component>
