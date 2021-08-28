@@ -2,6 +2,9 @@
 
 namespace App\Providers;
 
+use App\Nova\Metrics\availableEntries;
+use App\Nova\Metrics\availableKidsEntries;
+use App\Nova\Metrics\BookingsPerDay;
 use Illuminate\Support\Facades\Gate;
 use Laravel\Nova\Cards\Help;
 use Laravel\Nova\Nova;
@@ -54,7 +57,9 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
     protected function cards()
     {
         return [
-            new Help,
+            new availableEntries(),
+            new availableKidsEntries(),
+            new BookingsPerDay(),
         ];
     }
 
