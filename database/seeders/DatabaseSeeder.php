@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Nova\ImagesCategoriesList;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -23,6 +24,7 @@ class DatabaseSeeder extends Seeder
             ImageSeeder::class,
             UserSeeder::class,
             ParamSeeder::class,
+            ImagesCategoriesListSeeder::class,
         ]);
     }
 }

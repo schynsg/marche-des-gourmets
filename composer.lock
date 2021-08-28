@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f6c78b08ad670ca9a1d066c801d3a0bf",
+    "content-hash": "58f7a476b59b151474955981c0fa8a55",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -3361,6 +3361,63 @@
                 }
             ],
             "time": "2020-08-18T17:17:46+00:00"
+        },
+        {
+            "name": "simplesquid/nova-advanced-number-field",
+            "version": "v2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/simplesquid/nova-advanced-number-field.git",
+                "reference": "adbb14c4444a62c3e96beff9ec3ea4d542dc1ae9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/simplesquid/nova-advanced-number-field/zipball/adbb14c4444a62c3e96beff9ec3ea4d542dc1ae9",
+                "reference": "adbb14c4444a62c3e96beff9ec3ea4d542dc1ae9",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/nova": "^3.0",
+                "php": ">=7.3.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^5.0",
+                "phpunit/phpunit": "^8.0",
+                "symfony/var-dumper": "^4.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "SimpleSquid\\Nova\\Fields\\AdvancedNumber\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Matthew Poulter",
+                    "email": "matthew.poulter@simplesquid.co.za",
+                    "homepage": "https://simplesquid.co.za/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A Laravel Nova field which adds additional functionality to the default Number field.",
+            "homepage": "https://github.com/simplesquid/nova-advanced-number-field",
+            "keywords": [
+                "field",
+                "laravel",
+                "nova",
+                "nova-advanced-number-field",
+                "number",
+                "simplesquid"
+            ],
+            "support": {
+                "issues": "https://github.com/simplesquid/nova-advanced-number-field/issues",
+                "source": "https://github.com/simplesquid/nova-advanced-number-field/tree/master"
+            },
+            "time": "2020-04-25T09:27:57+00:00"
         },
         {
             "name": "spatie/once",

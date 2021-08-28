@@ -5,13 +5,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class image extends Model
+class ImagesCategoriesList extends Model
 {
     use HasFactory;
 
-    protected $fillable = [
-        'category_id',
-        'alternative',
-        'file_name',
-    ];
+    public function images() {
+        return $this->hasMany(image::class, 'category_id');
+    }
 }

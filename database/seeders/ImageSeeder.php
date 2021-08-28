@@ -17,34 +17,7 @@ class ImageSeeder extends Seeder
         $images =
             [
                 [
-                    'alternative' => 'Représentation du 18e marché des Gourmets 2018',
-                    'file_name' => '../img/exemple.png',
-                ],
-                [
-                    'alternative' => 'Représentation du 18e marché des Gourmets 2018',
-                    'file_name' => '../img/exemple.png',
-                ],
-                [
-                    'alternative' => 'Représentation du 18e marché des Gourmets 2018',
-                    'file_name' => '../img/exemple.png',
-                ],
-                [
-                    'alternative' => 'Représentation du 18e marché des Gourmets 2018',
-                    'file_name' => '../img/exemple.png',
-                ],
-                [
-                    'alternative' => 'Représentation du 17e marché des Gourmets 2017',
-                    'file_name' => '../img/exemple.png',
-                ],
-                [
-                    'alternative' => 'Représentation du 17e marché des Gourmets 2017',
-                    'file_name' => '../img/exemple.png',
-                ],
-                [
-                    'alternative' => 'Représentation du 17e marché des Gourmets 2017',
-                    'file_name' => '../img/exemple.png',
-                ],
-                [
+                    'category_id' => 1,
                     'alternative' => 'Représentation du 17e marché des Gourmets 2017',
                     'file_name' => '../img/exemple.png',
                 ],
