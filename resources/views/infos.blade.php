@@ -20,17 +20,22 @@
         </div>
         <div class="intro__background"></div>
     </div>
-    @if(count($infos))
     <div class="infos__content">
-        @foreach($infos as $info)
         <div>
-            <h3>{{$info->title}}</h3>
-            <p>{!!nl2br($info->content)!!}</p>
+            <h3>Où ?</h3>
+            <p>{!!nl2br($params->address)!!}</p>
         </div>
-        @endforeach
+        <div>
+            <h3>Quand ?</h3>
+            <p>{!!nl2br($params->timetable)!!}</p>
+        </div>
+        <div>
+            <h3>Prix</h3>
+            <p>Entrée : {{$params->price}} €</p>
+            <p>Entrée gratuite pour les moins de {{$params->age_for_free}} ans</p>
+        </div>
         <a href="{{ url('/ticketing') }}">Acheter des billets</a>
     </div>
-    @endif
 </main>
 @include('components.footer')
 </body>

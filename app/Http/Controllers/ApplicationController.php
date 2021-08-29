@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use App\Models\Application;
 use App\Models\Exhibitor;
 use App\Models\Filter;
-use App\Models\Text;
 use Illuminate\Http\Request;
 
 class ApplicationController extends Controller
@@ -27,10 +26,9 @@ class ApplicationController extends Controller
      */
     public function create()
     {
-        $texts = Text::all();
         $filters = Filter::all();
 
-        return view('newExhibitor', compact('texts', 'filters'));
+        return view('newExhibitor', compact( 'filters'));
     }
 
     /**
@@ -41,39 +39,6 @@ class ApplicationController extends Controller
      */
     public function store(Request $request)
     {
-
-        $request->validate([
-            'name' => 'required|string|unique:applications|max:255',
-            'phone' => 'required|numeric|max:15|min:7',
-            'website' => 'required|url',
-            'street' => 'required|max:255',
-            'postal' => 'required|numeric|min:3|max:8',
-            'city' => 'required|string|max:255',
-            'description' => 'required'
-        ]);
-
-        $input = $request->all();
-
-
-        $application = new Application();
-
-        $application->name = $input['name'];
-        $application->phone = $input['phone'];
-        $application->website = $input['website'];
-        $application->address = $input['street'];
-        $application->postal_code = $input['postal'];
-        $application->city = $input['city'];
-        $application->country = $input['country'];
-        $application->description = $input['description'];
-        if (isset($input['bio'])){
-            $application->is_bio = 1;
-        } else{
-            $application->is_bio = 0;
-        }
-
-        $application->save();
-
-        return view('welcome');
 
 
     }

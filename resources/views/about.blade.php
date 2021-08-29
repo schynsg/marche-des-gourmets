@@ -40,7 +40,7 @@
                 </li>
                 @endforeach
             </ul>
-            <a href="{{ url('/ticketing') }}">Acheter des billets</a>
+            <a href="{{ url('/ticketing') }}" title="Vers la billeterie">Acheter des billets</a>
         </div>
         @endif
         <div class="about-rotary">
@@ -64,7 +64,7 @@
                     <li>La Vie par un Fil, à Montegnée</li>
                     <li>etc,...</li>
                 </ul>
-                <a href="{{ url('/contact') }}">Contactez-nous</a>
+                <a href="{{ url('/contact') }}" title="Vers la page contact">Contactez-nous</a>
             </div>
         </div>
     </div>

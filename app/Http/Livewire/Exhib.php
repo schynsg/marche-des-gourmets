@@ -17,9 +17,21 @@ class Exhib extends Component
 
     public function render()
     {
-        $texts = Text::all();
         $filters = Filter::all();
-        $exhibitorsAll = Exhibitor::query()->where('name','LIKE', '%'. $this->searchTerm . '%')->orWhere('city','LIKE', '%'. $this->searchTerm . '%')->orWhere('description','LIKE', '%'. $this->searchTerm . '%')->paginate(10);
+        $search = '%'.$this->searchTerm . '%';
+        $exhibitorsAll = Exhibitor::orderBy('id', 'ASC')
+            ->where(function ($query) use ($search){
+                $query->where('name','LIKE',$search)
+                    ->orWhere('country','LIKE',$search)
+                    ->orWhere('description','LIKE',$search)
+                    ->orWhere('city','LIKE',$search)
+                    ->orWhere('address','LIKE',$search)
+                    ->orWhere('city','LIKE',$search);
+            })
+            ->where(function ($query){
+                $query->where('active', '=', 1);
+            })
+            ->paginate(10);
         $exhibitorsFiltered = [];
 
         for ($i = 0; $i < count($exhibitorsAll->items()); $i++) {
@@ -34,7 +46,7 @@ class Exhib extends Component
             }
         }
 
-        return view('livewire.exhib', ['exhibitors' => $exhibitorsFiltered], compact('texts','filters', 'exhibitorsAll'));
+        return view('livewire.exhib', ['exhibitors' => $exhibitorsFiltered], compact('filters', 'exhibitorsAll'));
     }
 }
 

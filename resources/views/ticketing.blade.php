@@ -30,13 +30,22 @@
     <div class="ticketing__content">
         <form action="/payment" method="get" class="ticketing__form">
             <div>
-                <label for="number">Entrée adulte (<?= number_format($price, 2, ',', ' ') ;?>€)</label>
+                <label for="number">Entrées adultes (<?= number_format($price, 2, ',', ' ') ;?>€)</label>
                 <input type="number" name="number" id="number" value="1" min="1">
             </div>
-            <p class="ticketing__16-years">
-                L'entrée est gratuite pour les moins de 16 ans. Merci de renseigner uniquement le nombre de personnes de plus de 16 ans.
-            </p>
             <p id="total_p" style="display: none">Total : <span class="total"></span></p>
+            <div>
+                <label for="number_kids">Entrées - {{$ageForFree}} ans (Gartuit)</label>
+                <input type="number" name="number_kids" id="number_kids" value="0" min="0">
+            </div>
+            <div>
+                <label for="first_name">Votre prénom</label>
+                <input type="text" name="first_name" id="first_name" placeholder="Entrez ici votre prénom" required>
+            </div>
+            <div>
+                <label for="last_name">Votre nom</label>
+                <input type="text" name="last_name" id="last_name" placeholder="Entrez ici votre nom" required>
+            </div>
             <input type="submit" value="Procéder au paiement">
         </form>
     </div>
@@ -46,9 +55,9 @@
     const totalParagraph = document.getElementById('total_p');
     totalParagraph.style.display = "block";
     const ticketInput = document.getElementById('number');
-    const price = <?php echo $price ;?>;
+    const price = {{$price}};
     const totalSpan = document.getElementsByClassName('total')[0];
-    totalSpan.innerHTML = ((600 / 100).toFixed(2) + '€');
+    totalSpan.innerHTML = (price.toFixed(2) + '€');
 
     function changeNumber () {
         const ticketNumber = ticketInput.value;

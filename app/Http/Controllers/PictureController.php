@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Image;
+use App\Models\ImagesCategoriesList;
 use App\Models\Picture;
 use Illuminate\Http\Request;
 
@@ -15,9 +16,10 @@ class PictureController extends Controller
      */
     public function index()
     {
-        $images = Image::paginate(10);
+        //$images = Image::paginate(10);
+        $categories = ImagesCategoriesList::all();
 
-        return view('pictures', compact('images'));
+        return view('pictures', compact('categories'));
     }
 
     /**

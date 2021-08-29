@@ -19,6 +19,10 @@
     <form action="/payment" method="post" id="payment-form">
         {{csrf_field()}}
         <div class="form-row">
+            <input type="hidden" name="number" value="{{$number}}">
+            <input type="hidden" name="number_kids" value="{{$number_kids}}">
+            <input type="hidden" name="first_name" value="{{$first_name}}">
+            <input type="hidden" name="last_name" value="{{$last_name}}">
             <label for="name">Nom du titulaire de la carte</label>
             <input type="text" id="name" name="name" placeholder="Nom" class="@error('name') is-invalid @enderror" value="{{ old('name') }}">
             @error('name')
@@ -42,6 +46,7 @@
 
         <button>Procéder au paiement</button>
     </form>
+    <p class="secure-payment_infos"><span>Paiement sécurisé</span><span>Après avoir procéder au paiement, nous vous enverons une confirmation de réservation par e-mail.</span></p>
 </main>
 @include('components.footer')
 <script>

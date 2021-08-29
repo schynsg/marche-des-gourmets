@@ -30,7 +30,7 @@
                             <p class="exhibitor__address">{{$exhibitor->address}}, {{$exhibitor->postal_code}} {{$exhibitor->city}} ({{$exhibitor->country}})</p>
                             <p class="exhibitors__products">{{$exhibitor->description}}</p>
                         </div>
-                        @if($exhibitor->website !== "")<a href="{{$exhibitor->website}}" title="Vers le site de l'exposant">Visiter le site web</a>@endif
+                        @if($exhibitor->website !== "")<a href="{{$exhibitor->website}}" title="Vers le site de l'exposant {{$exhibitor->name}}">Visiter le site web</a>@endif
                     </li>
                 @endforeach
             </ul>

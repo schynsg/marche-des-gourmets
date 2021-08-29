@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Message;
-use App\Models\Text;
+use App\Models\Params;
 use Illuminate\Http\Request;
 
 class MessageController extends Controller
@@ -25,9 +25,9 @@ class MessageController extends Controller
      */
     public function create()
     {
-        $texts = Text::all();
+        $params = Params::first();
 
-        return view('contact', compact('texts'));
+        return view('contact', compact('params'));
     }
 
     /**

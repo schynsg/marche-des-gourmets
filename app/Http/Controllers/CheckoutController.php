@@ -2,10 +2,13 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Text;
+use App\Mail\BookingSuccess;
+use App\Models\Bookings;
+use App\Models\Params;
 use Cartalyst\Stripe\Laravel\Facades\Stripe;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
+use Illuminate\Support\Facades\Mail;
 use Stripe\PaymentIntent;
 
 class CheckoutController extends Controller
@@ -18,9 +21,18 @@ class CheckoutController extends Controller
      */
     public function index(Request $request)
     {
-        $number = $request->all()['number'];
-        $price = floatval(Text::query()->where('title','LIKE', 'price')->first()->content);
-        return view('checkout.index', compact('number', 'price'));
+        if($request->all()['number'] > 0 && $request->all()['number'] >= 0) {
+            $number = $request->all()['number'];
+            $number_kids = $request->all()['number_kids'];
+            $first_name = $request->all()['first_name'];
+            $last_name = $request->all()['last_name'];
+            $price = floatval(Params::first()->price);
+            return view('checkout.index', compact('number','number_kids', 'first_name', 'last_name', 'price'));
+        } else {
+            $host  = $_SERVER['HTTP_HOST'];
+            $uri   = rtrim(dirname($_SERVER['PHP_SELF']), '/\\');
+            header("Location: http://$host$uri");
+        }
     }
 
     /**
@@ -47,6 +59,28 @@ class CheckoutController extends Controller
         ]);
 
         $email = $request['email'];
+        $first_name = $request['first_name'];
+        $last_name = $request['last_name'];
+        $number = $request['number'];
+        $number_kids = $request['number_kids'];
+
+        $booking = new Bookings();
+
+        $booking->first_name = $first_name;
+        $booking->last_name = $last_name;
+        $booking->email = $email;
+        $booking->quantity = $number;
+        $booking->kids_quantity = $number_kids;
+
+        $booking->save();
+
+        $content = new \stdClass();
+        $content->first_name = $first_name;
+        $content->last_name = $last_name;
+        $content->number = $number;
+        $content->number_kids = $number_kids;
+
+        //Mail::to($email)->send(new BookingSuccess($content));
 
         return view('checkout.success', compact('email'));
     }

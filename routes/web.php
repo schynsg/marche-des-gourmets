@@ -76,7 +76,7 @@ Route::get('/ticketing', function () {
 Route::get('/ticketing', [\App\Http\Controllers\TicketController::class, 'index']);
 
 
-Route::post('/newApplication', [\App\Http\Controllers\ApplicationController::class, 'store']);
+Route::post('/newApplication', [\App\Http\Controllers\ExhibitorController::class, 'store']);
 
 Route::post('/newMessage', [\App\Http\Controllers\MessageController::class, 'store']);
 

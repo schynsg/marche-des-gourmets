@@ -23,7 +23,8 @@
     <div class="contact__content">
         <div>
             <h3>Marché des Gourmets</h3>
-            <p>{!!nl2br($texts->where('title', '=', 'Contact informations')->first()->content)!!}</p>
+            <p>{!!nl2br($params->contact_address)!!}</p>
+            <p>{!!nl2br($params->contact_phone)!!}</p>
         </div>
         <div>
             <h3>Formulaire de contact</h3>

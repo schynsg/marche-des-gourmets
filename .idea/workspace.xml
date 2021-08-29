@@ -2,8 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3bf8d15f-c1bf-410f-a1c6-d01ccec63d63" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/applicationSent.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/emails/success.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/NovaServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/NovaServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AboutController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AboutController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ApplicationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ApplicationController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CheckoutController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CheckoutController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ExhibitorController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ExhibitorController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/IndexController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/IndexController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/InfoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/InfoController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MessageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MessageController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PictureController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PictureController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TicketController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/TicketController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Exhib.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Exhib.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Exhibitors.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Exhibitors.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Application.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Application.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_01_02_131025_create_exhibitors_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_01_02_131025_create_exhibitors_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/ExhibitorSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/ExhibitorSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/about.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/about.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/checkout/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/checkout/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/contact.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/infos.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/infos.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/exhib.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/exhib.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/exhibitors.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/exhibitors.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/newExhibitor.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/newExhibitor.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pictures.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pictures.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/ticketing.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/ticketing.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,7 +201,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -185,6 +212,9 @@
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\schyn\Desktop\Data\B3 2020-21\design web\marche-des-gourmets-laravel\resources\views" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\schyn\Desktop\Data\B3 2020-21\design web\marche-des-gourmets-laravel\resources\views\errors" />
       <recent name="C:\Users\schyn\Desktop\Data\B3 2020-21\design web\marche-des-gourmets-laravel\storage\app\public" />
@@ -228,7 +258,7 @@
       <workItem from="1629920010941" duration="2328000" />
       <workItem from="1630004059973" duration="4975000" />
       <workItem from="1630010481659" duration="4096000" />
-      <workItem from="1630078981269" duration="18305000" />
+      <workItem from="1630078981269" duration="48810000" />
     </task>
     <servers />
   </component>
@@ -236,10 +266,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="624" y="211" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1630180430950">
+    <state x="624" y="211" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1630245805406">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824@0.0.1536.824" timestamp="1630008108775" />
-    <state x="624" y="211" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1630180430950" />
+    <state x="624" y="211" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1630245805406" />
   </component>
 </project>

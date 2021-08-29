@@ -17,7 +17,7 @@ class CreateExhibitorsTable extends Migration
             $table->id();
             $table->string('name')->unique();
             $table->string('phone');
-            $table->string('website');
+            $table->string('website')->nullable();
             $table->string('address');
             $table->mediumInteger('postal_code');
             $table->string('city');

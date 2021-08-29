@@ -15,15 +15,15 @@
             <div>
                 <div class="intro__text">
                     <div class="intro__title">
-                        <h2 itemprop="about">{{$texts->where('title', '=', 'Edition number')->first()->content}}<sup>e</sup> Marché des Gourmets</h2>
-                        <p itemprop="startDate">{{$texts->where('title', '=', 'Date')->first()->content}}</p>
+                        <h2 itemprop="about">{{$params->edition_number}}<sup>e</sup> Marché des Gourmets</h2>
+                        <p itemprop="startDate">{{$params->date}}</p>
                     </div>
                     <div class="intro__content">
                         <p itemprop="organizer">Organisé par le Rotary Club de Flémalle</p>
                     </div>
                 </div>
                 <div class="intro__link">
-                    <a href="{{ url('/exhibitors') }}">Découvir nos exposants</a>
+                    <a href="{{ url('/exhibitors') }}" title="Vers la liste de nos exposants">Découvir nos exposants</a>
                 </div>
             </div>
             <div class="intro__img">
@@ -45,7 +45,7 @@
                     <p><b>M. Jean-Michel JAVAUX</b>, Bourgmestre d'Amay</p>
                 </div>
             </div>
-            <a href="{{ url('/about') }}">Découvrir le marché</a>
+            <a href="{{ url('/about') }}" title="En savoir plus sur le Marché des Gourmets">Découvrir le marché</a>
         </div>
         <div class="partners">
             <h2>Nos partenaires</h2>
@@ -53,7 +53,7 @@
                 @foreach($parters as $partner)
                 <div class="partner">
                     <h3>
-                        <a href="{{$partner->website}}" class="partner__link">
+                        <a href="{{$partner->website}}" class="partner__link" title="Visiter le site web du partenaire {{$partner->name}}">
                             <span class="helper"></span>
                             <img src="../storage/{{$partner->file_name}}" alt="{{$partner->name}}" width="210" height="88" itemprop="sponsor">
                         </a>
