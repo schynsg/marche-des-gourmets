@@ -19,7 +19,7 @@ class BookingSuccess extends Mailable
      */
     public function __construct($content)
     {
-        $this->content = $content->toArray();
+        $this->content = $content;
     }
 
     /**
