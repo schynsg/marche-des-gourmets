@@ -11,14 +11,15 @@ class BookingSuccess extends Mailable
 {
     use Queueable, SerializesModels;
 
+    public $content;
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($content)
     {
-        //
+        $this->content = $content->toArray();
     }
 
     /**
@@ -28,6 +29,7 @@ class BookingSuccess extends Mailable
      */
     public function build()
     {
-        return $this->markdown('emails.success');
+        return $this->markdown('emails.success')
+            ->with('content', $this->content);
     }
 }
