@@ -80,7 +80,7 @@ class CheckoutController extends Controller
         $content->number = $number;
         $content->number_kids = $number_kids;
 
-        //Mail::to($email)->send(new BookingSuccess($content));
+        Mail::to($email)->send(new BookingSuccess($content));
 
         return view('checkout.success', compact('email'));
     }
