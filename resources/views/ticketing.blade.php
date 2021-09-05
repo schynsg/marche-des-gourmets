@@ -29,10 +29,11 @@
         <div class="intro__background"></div>
     </div>
     <div class="ticketing__content">
-        <form action="/payment" method="get" class="ticketing__form">
+        @if($availableEntries > 0) {
+            <form action="/payment" method="get" class="ticketing__form">
             <div>
                 <label for="number">Entrées adultes (<?= number_format($price, 2, ',', ' ') ;?>€)</label>
-                <input type="number" name="number" id="number" value="1" min="1">
+                <input type="number" name="number" id="number" value="1" min="1" max="{{$availableEntries}}">
             </div>
             <p id="total_p" style="display: none">Total : <span class="total"></span></p>
             <div>
@@ -49,6 +50,9 @@
             </div>
             <input type="submit" value="Procéder au paiement">
         </form>
+        @else
+            <p>La prochaine édition du Marché des Gourmets est sold out. Veillez nous en excuser.</p>
+        @endif
     </div>
 </main>
 @include('components.footer')

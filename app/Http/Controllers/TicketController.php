@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Bookings;
 use App\Models\Params;
 use Illuminate\Http\Request;
+use PhpParser\Node\Param;
 
 class TicketController extends Controller
 {
@@ -13,7 +15,16 @@ class TicketController extends Controller
         $price = Params::first()->price;
         $ageForFree = Params::first()->age_for_free;
 
+        $entriesNumber = Param::first()->entries_number;
 
-        return view('ticketing', compact( 'price', 'ageForFree'));
+        $bookings = Bookings::all();
+        $entriesTotal = 0;
+        foreach ($bookings as $booking){
+            $entriesTotal += $booking->quantity;
+        }
+
+        $availableEntries = $entriesNumber - $entriesTotal;
+
+        return view('ticketing', compact( 'price', 'ageForFree', 'availableEntries'));
     }
 }
