@@ -15,7 +15,7 @@ class TicketController extends Controller
         $price = Params::first()->price;
         $ageForFree = Params::first()->age_for_free;
 
-        $entriesNumber = Param::first()->entries_number;
+        $entriesNumber = Params::first()->entries_number;
 
         $bookings = Bookings::all();
         $entriesTotal = 0;
