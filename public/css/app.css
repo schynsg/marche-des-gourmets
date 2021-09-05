@@ -1561,6 +1561,10 @@ div.choices {
   margin: 0 auto;
 }
 
+.infos__content figure{
+    margin-bottom: 30px;
+}
+
 .contact__content,
 .ticketing__content {
   margin-top: 3.6363em;
