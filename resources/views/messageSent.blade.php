@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Message envoyé | Marché des Gourmets</title>
     <link href="{{asset('css/app.css?v=').time()}}" rel="stylesheet">
+    @include('components.favicon')
 </head>
 <body>
 @include('components.header')

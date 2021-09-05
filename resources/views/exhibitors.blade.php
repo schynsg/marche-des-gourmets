@@ -8,6 +8,7 @@
     <title>Nos exposants - Marché des Gourmets</title>
     @livewireStyles
     <link href="{{asset('css/app.css?v=').time()}}" rel="stylesheet">
+    @include('components.favicon')
 </head>
 <body>
 @include('components.header')

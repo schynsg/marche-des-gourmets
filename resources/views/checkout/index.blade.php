@@ -8,6 +8,7 @@
     <title>Paiement | Marché des Gourmets</title>
     <link href="{{asset('css/app.css?v=').time()}}" rel="stylesheet">
     <script src="https://js.stripe.com/v3/"></script>
+    @include('components.favicon')
 </head>
 <body>
 @include('components.header')

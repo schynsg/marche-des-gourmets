@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Photos - Marché des Gourmets</title>
     <link href="{{asset('css/app.css?v=').time()}}" rel="stylesheet">
+    @include('components.favicon')
 
     <!-- Photoswipper-->
     <link rel="stylesheet" href="<?php echo asset('photoswipper/photoswipe.css')?>">
