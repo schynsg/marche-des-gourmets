@@ -1798,7 +1798,7 @@ div.alert::before {
   margin-top: 2em;
 }
 
-.pswp .demo-gallery__img--main img{
+.pswp img{
     max-width: none!important;
     object-fit: contain!important;
 }
