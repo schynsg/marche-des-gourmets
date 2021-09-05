@@ -33,10 +33,9 @@
             <div class="my-gallery demo-gallery" itemscope itemtype="http://schema.org/ImageGallery">
                 @foreach($category->images as $image)
                     <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                        <a href="{{$image->file_name}}" title="{{$image->alternative}}" itemprop="contentUrl" data-size="430x640">
+                        <a href="{{$image->file_name}}" title="{{$image->alternative}}" itemprop="contentUrl" class="demo-gallery__img--main">
                             <img src="{{$image->file_name}}" itemprop="thumbnail" alt="{{$image->alternative}}" />
                         </a>
-                        <figcaption itemprop="caption description">{{$image->alternative}}</figcaption>
                     </figure>
                 @endforeach
             </div>
