@@ -1341,6 +1341,9 @@ div.choices{
     a{
         margin: 0 auto;
     }
+    figure{
+        margin-bottom: 40px;
+    }
 }
 
 .contact__content, .ticketing__content{
@@ -1558,6 +1561,11 @@ div.alert{
     svg{
         margin-top: 2em;
     }
+}
+
+.pswp img {
+    max-width: none;
+    object-fit: contain;
 }
 
 
