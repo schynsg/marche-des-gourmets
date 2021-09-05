@@ -29,7 +29,7 @@
         <div class="intro__background"></div>
     </div>
     <div class="ticketing__content">
-        @if($availableEntries > 0) {
+        @if($availableEntries > 0)
             <form action="/payment" method="get" class="ticketing__form">
             <div>
                 <label for="number">Entrées adultes (<?= number_format($price, 2, ',', ' ') ;?>€)</label>
