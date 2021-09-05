@@ -1798,6 +1798,11 @@ div.alert::before {
   margin-top: 2em;
 }
 
+.pswp .demo-gallery__img--main img{
+    max-width: none!important;
+    object-fit: contain!important;
+}
+
 @media screen and (max-width: 500px) {
   .error_404 {
     font-size: 5em;
