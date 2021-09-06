@@ -50,6 +50,8 @@ class ExhibitorController extends Controller
 
         $input = $request->all();
 
+        var_dump($input);
+        die();
 
         $application = new Exhibitor();
 
