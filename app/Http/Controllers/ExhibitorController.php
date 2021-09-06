@@ -85,7 +85,7 @@ class ExhibitorController extends Controller
         $content = new \stdClass();
         $content->name = $input['name'];
 
-        Mail::to('goran.schyns@student.hepl.be')->send(new ApplicationSuccess($content));
+        Mail::to('dominique.vilain@hepl.be')->send(new ApplicationSuccess($content));
 
         return view('applicationSent');
     }
