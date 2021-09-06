@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3bf8d15f-c1bf-410f-a1c6-d01ccec63d63" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/emails/application.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ExhibitorController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ExhibitorController.php" afterDir="false" />
     </list>
@@ -174,7 +175,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/emails" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -185,13 +186,14 @@
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\schyn\Desktop\Data\B3 2020-21\design web\marche-des-gourmets-laravel\resources\views" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\schyn\Desktop\Data\B3 2020-21\design web\marche-des-gourmets-laravel\resources\views\errors" />
       <recent name="C:\Users\schyn\Desktop\Data\B3 2020-21\design web\marche-des-gourmets-laravel\storage\app\public" />
       <recent name="C:\Users\schyn\Desktop\Data\B3 2020-21\design web\marche-des-gourmets-laravel\public" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\schyn\Desktop\Data\B3 2020-21\design web\marche-des-gourmets-laravel\resources\views\emails" />
+      <recent name="C:\Users\schyn\Desktop\Data\B3 2020-21\design web\marche-des-gourmets-laravel\resources\views" />
     </key>
   </component>
   <component name="RunManager">
@@ -235,7 +237,7 @@
       <workItem from="1630352161622" duration="517000" />
       <workItem from="1630352955225" duration="20000" />
       <workItem from="1630851925259" duration="11811000" />
-      <workItem from="1630951490729" duration="1351000" />
+      <workItem from="1630951490729" duration="3150000" />
     </task>
     <servers />
   </component>

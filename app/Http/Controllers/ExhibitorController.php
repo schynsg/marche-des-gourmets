@@ -2,10 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\ApplicationSuccess;
 use App\Models\Exhibitor;
 use App\Models\Exhibitor_filter;
 use App\Models\Filter;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class ExhibitorController extends Controller
 {
@@ -79,6 +81,11 @@ class ExhibitorController extends Controller
                 $exhibFilter->save();
             }
         }
+
+        $content = new \stdClass();
+        $content->name = $input['name'];
+
+        Mail::to('goran.schyns@student.hepl.be')->send(new ApplicationSuccess($content));
 
         return view('applicationSent');
     }
