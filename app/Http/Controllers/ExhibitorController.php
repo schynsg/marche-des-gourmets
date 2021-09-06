@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Exhibitor;
+use App\Models\Exhibitor_filter;
 use App\Models\Filter;
 use Illuminate\Http\Request;
 
@@ -50,9 +51,6 @@ class ExhibitorController extends Controller
 
         $input = $request->all();
 
-        var_dump($input);
-        die();
-
         $application = new Exhibitor();
 
         $application->name = $input['name'];
@@ -71,6 +69,16 @@ class ExhibitorController extends Controller
         $application->active = 0;
 
         $application->save();
+
+        $currentApplicationId = Exhibitor::orderBy('id', 'desc')->first()->id;
+        foreach (Filter::all() as $filter) {
+            if (isset($input[$filter['value']])){
+                $exhibFilter = new Exhibitor_filter();
+                $exhibFilter->exhibitor_id = $currentApplicationId;
+                $exhibFilter->filter_id = $filter->id;
+                $exhibFilter->save();
+            }
+        }
 
         return view('applicationSent');
     }
